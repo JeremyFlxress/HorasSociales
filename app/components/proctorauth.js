@@ -33,7 +33,7 @@ const ProctorAuth = () => {
             </header>
             
             <main className="content">
-                <h2>Exam Group: None</h2>
+               
                 <p className="notification">⚠️ Candidate, please notify the proctor that you are ready to proceed.</p>
                 
                 <div className="proctor-auth-section">

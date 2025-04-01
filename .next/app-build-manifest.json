@@ -5,17 +5,23 @@
       "static/chunks/main-app.js",
       "static/chunks/app/layout.js"
     ],
-    "/exam-selection/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/exam-selection/page.css",
-      "static/chunks/app/exam-selection/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/exam-setup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/exam-setup/page.css",
       "static/chunks/app/exam-setup/page.js"
+    ],
+    "/exam-selection/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exam-selection/page.css",
+      "static/chunks/app/exam-selection/page.js"
     ],
     "/agreement-page/page": [
       "static/chunks/webpack.js",
@@ -40,6 +46,11 @@
       "static/chunks/main-app.js",
       "static/css/app/exam-info/page.css",
       "static/chunks/app/exam-info/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

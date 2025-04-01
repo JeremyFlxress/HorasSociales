@@ -1,4 +1,4 @@
-// File: C:\Users\edgar\OneDrive\Escritorio\Nueva carpeta\app\proctor-auth\page.js
+// File: C:\Users\jerem\Documents\GitHub\HorasSociales\app\proctor-auth\page.js
 import * as entry from '../../../../app/proctor-auth/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
