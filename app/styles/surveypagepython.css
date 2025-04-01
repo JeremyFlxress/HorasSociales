@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef3f9;
+    overflow-y: hidden;
+}
+
+.header1 {
+    background-color: #cce7f9;
+    padding: 15px;
+    color: #00458b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 7px solid #00458b; 
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.survey-container {
+    max-width: 4000px;
+    margin: 2 auto;
+    padding: 5px;
+}
+
+.instructions {
+    font-size: 1rem;
+    color: #333;
+    margin: 40px ;
+    max-width: 10000px;
+  
+    line-height: 1.5;
+}
+
+.answer-area {
+    margin-top: 25px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00458b;
+}
+
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.option {
+    background-color: #86c3ff;
+    color: #00458b;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 calc(30% - 15px);
+    box-sizing: border-box;
+    transition: transform 0.2s, background-color 0.2s;
+    min-width: 200px;
+}
+
+.option:hover {
+    background-color: #0066cc;
+    transform: scale(1.03);
+}
+
+.option.selected {
+    background-color: #86c3ff;
+}
+
+.next-button {
+    display: block;
+    margin: 80px 0;
+    margin-left: auto;
+    background-color: #00458b;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.next-button:hover {
+    background-color: #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.next-button:focus {
+    outline: 2px solid #0066cc;
+}
