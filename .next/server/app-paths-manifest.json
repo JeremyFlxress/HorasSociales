@@ -1,9 +1,10 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/exam-selection/page": "app/exam-selection/page.js",
   "/exam-setup/page": "app/exam-setup/page.js",
+  "/exam-selection/page": "app/exam-selection/page.js",
+  "/page": "app/page.js",
+  "/agreement-page/page": "app/agreement-page/page.js",
   "/proctor-auth/page": "app/proctor-auth/page.js",
-  "/exam-info/page": "app/exam-info/page.js",
   "/exam-requirements/page": "app/exam-requirements/page.js",
-  "/agreement-page/page": "app/agreement-page/page.js"
+  "/exam-info/page": "app/exam-info/page.js"
 }
