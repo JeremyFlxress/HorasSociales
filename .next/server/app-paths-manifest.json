@@ -1,5 +1,4 @@
 {
-  "/exam-info/page": "app/exam-info/page.js",
-  "/exam-requirements/page": "app/exam-requirements/page.js",
-  "/proctor-auth/page": "app/proctor-auth/page.js"
+  "/page": "app/page.js",
+  "/exam-start/page": "app/exam-start/page.js"
 }

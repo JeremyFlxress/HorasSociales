@@ -5,23 +5,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/layout.js"
     ],
-    "/exam-info/page": [
+    "/exam-start/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/exam-info/page.css",
-      "static/chunks/app/exam-info/page.js"
+      "static/chunks/app/exam-start/page.js"
     ],
-    "/exam-requirements/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/exam-requirements/page.css",
-      "static/chunks/app/exam-requirements/page.js"
-    ],
-    "/proctor-auth/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/proctor-auth/page.css",
-      "static/chunks/app/proctor-auth/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ]
   }
 }
