@@ -32,6 +32,6 @@ export const questions = [
 export const examConfig = {
   totalPoints: 1000,
   passingScore: 700,
-  timeLimit: 7200, // 2 hours in seconds
+  timeLimit: 3600, // 2 hours in seconds
   allowedAttempts: 3
 };

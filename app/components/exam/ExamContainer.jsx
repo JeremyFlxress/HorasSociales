@@ -1,3 +1,6 @@
+
+import React, { useState } from 'react';
+
 export default function ExamContainer({ question, questionNumber, totalQuestions, onAnswer }) {
     const [selectedOption, setSelectedOption] = useState(null);
     const [fillBlankValue, setFillBlankValue] = useState('');

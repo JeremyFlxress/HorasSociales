@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { calculateScore } from '../utils/scoring';
 import ExamContainer from '../components/exam/ExamContainer';
 import Timer from '../components/exam/Timer';
 import { questions, examConfig } from '../data/questions';
 import { saveExamProgress, loadExamProgress } from '../utils/storage';
+import '../styles/exam.css'; // Importación de estilos correcta
 
 export default function ExamPage() {
   const router = useRouter();
@@ -50,18 +52,19 @@ export default function ExamPage() {
     finishExam(answers);
   };
 
+  // CORRECCIÓN PRINCIPAL: Cambiar la sintaxis de router.push
   const finishExam = (finalAnswers) => {
-    const score = questions.reduce((total, question) => {
-      return finalAnswers[question.id] === question.answer 
-        ? total + question.points 
-        : total;
-    }, 0);
+    const score = calculateScore(questions, finalAnswers);
     
-    saveExamProgress(null); // Clear saved progress
+    // Codificación CORRECTA de parámetros
+    const params = new URLSearchParams();
+    params.set('score', score);
+    params.set('answers', JSON.stringify(finalAnswers));
     
-    router.push(`/results?score=${score}&answers=${encodeURIComponent(JSON.stringify(finalAnswers))}`);
+    // Usar window.location para evitar problemas de routing
+    window.location.href = `/results?${params.toString()}`;
   };
-
+  
   if (isLoading) {
     return <div>Loading exam...</div>;
   }

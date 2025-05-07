@@ -1,36 +1,49 @@
+'use client';
 import { useRouter } from 'next/router';
-import Header from '../components/Header';
-import Results from '../components/Results';
 import { questions, examConfig } from '../data/questions';
 
-export default function ExamResults() {
+export default function ResultsPage() {
   const router = useRouter();
   const { score, answers } = router.query;
 
-  if (!score || !answers) {
-    return (
-      <div className="container">
-        <Header />
-        <div className="no-results">
-          <h2>No exam results found</h2>
-          <p>Please complete the exam to view your results.</p>
-        </div>
-      </div>
-    );
-  }
+  // Parse the answers from URL query
+  const parsedAnswers = answers ? JSON.parse(decodeURIComponent(answers)) : {};
+  const numericScore = score ? parseInt(score) : 0;
 
-  const parsedAnswers = JSON.parse(answers);
-  const numericScore = parseInt(score);
+  // Calculate results
+  const passed = numericScore >= examConfig.passingScore;
+  const percentage = Math.round((numericScore / examConfig.totalPoints) * 100);
 
   return (
-    <div className="results-page">
+    <div className="results-container">
       <Header />
-      <Results 
-        questions={questions}
-        answers={parsedAnswers}
-        score={numericScore}
-        examConfig={examConfig}
-      />
+      <h1>Exam Results</h1>
+      
+      <div className="score-summary">
+        <h2>Your Score: {numericScore}/{examConfig.totalPoints} ({percentage}%)</h2>
+        <p className={passed ? 'passed' : 'failed'}>
+          {passed ? 'Congratulations! You passed!' : 'You did not pass. Please try again.'}
+        </p>
+      </div>
+
+      <div className="questions-review">
+        <h2>Question Review</h2>
+        {questions.map((question, index) => {
+          const isCorrect = parsedAnswers[question.id] === question.answer;
+          return (
+            <div key={question.id} className={`question ${isCorrect ? 'correct' : 'incorrect'}`}>
+              <h3>Question {index + 1}</h3>
+              <p>{question.text}</p>
+              {question.code && <pre><code>{question.code}</code></pre>}
+              <div className="answer-info">
+                <p>Your answer: {parsedAnswers[question.id] || 'Not answered'}</p>
+                {!isCorrect && <p>Correct answer: {question.answer}</p>}
+                <p className="explanation">{question.explanation}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

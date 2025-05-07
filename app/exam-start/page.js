@@ -1,6 +1,6 @@
 "use client";
 
-import ExamPage from "../pages/exam";
+import ExamPage from "../exam/page";
 
 export default function ExamSetupPage() {
   return <ExamPage />;
