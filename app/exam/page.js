@@ -7,7 +7,7 @@ import ExamContainer from '../components/exam/ExamContainer';
 import Timer from '../components/exam/Timer';
 import { questions, examConfig } from '../data/questions';
 import { saveExamProgress, loadExamProgress } from '../utils/storage';
-import '../styles/exam.css'; // Importación de estilos correcta
+import '../styles/exam.css';
 
 export default function ExamPage() {
   const router = useRouter();
@@ -15,6 +15,7 @@ export default function ExamPage() {
   const [answers, setAnswers] = useState({});
   const [timeLeft, setTimeLeft] = useState(examConfig.timeLimit);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false); // Nuevo estado para controlar envío
 
   useEffect(() => {
     // Load saved progress from localStorage
@@ -28,43 +29,60 @@ export default function ExamPage() {
   }, []);
 
   useEffect(() => {
-    if (!isLoading) {
+    if (!isLoading && !isSubmitting) {
       saveExamProgress({
         answers,
         currentQuestionIndex,
         timeLeft
       });
     }
-  }, [answers, currentQuestionIndex, timeLeft, isLoading]);
+  }, [answers, currentQuestionIndex, timeLeft, isLoading, isSubmitting]);
+
+  const handleNavigate = (direction) => {
+    if (direction === 'prev' && currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+    } else if (direction === 'next' && currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    }
+  };
 
   const handleAnswer = (questionId, answer) => {
-    const newAnswers = { ...answers, [questionId]: answer };
-    setAnswers(newAnswers);
-
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
-      finishExam(newAnswers);
-    }
+    setAnswers(prev => ({
+      ...prev,
+      [questionId]: answer
+    }));
   };
 
   const handleTimeUp = () => {
     finishExam(answers);
   };
 
-  // CORRECCIÓN PRINCIPAL: Cambiar la sintaxis de router.push
-  const finishExam = (finalAnswers) => {
-    const score = calculateScore(questions, finalAnswers);
+  const finishExam = async (finalAnswers) => {
+    if (isSubmitting) return; // Evitar múltiples envíos
     
-    // Codificación CORRECTA de parámetros
-    const params = new URLSearchParams();
-    params.set('score', score);
-    params.set('answers', JSON.stringify(finalAnswers));
+    setIsSubmitting(true); // Bloquear nuevos intentos
     
-    // Usar window.location para evitar problemas de routing
-    window.location.href = `/results?${params.toString()}`;
+    try {
+      const score = calculateScore(questions, finalAnswers);
+      const params = new URLSearchParams();
+      params.set('score', score);
+      params.set('answers', JSON.stringify(finalAnswers));
+      
+      // Limpiar el progreso guardado
+      saveExamProgress(null);
+      
+      // Dos métodos alternativos para asegurar la navegación
+      try {
+        router.push(`/results?${params.toString()}`);
+      } catch (e) {
+        window.location.href = `/results?${params.toString()}`;
+      }
+    } catch (error) {
+      console.error('Error al finalizar el examen:', error);
+      setIsSubmitting(false);
+    }
   };
-  
+
   if (isLoading) {
     return <div>Loading exam...</div>;
   }
@@ -77,7 +95,11 @@ export default function ExamPage() {
         questionNumber={currentQuestionIndex + 1}
         totalQuestions={questions.length}
         onAnswer={handleAnswer}
-        selectedAnswer={answers[questions[currentQuestionIndex].id]}
+        selectedAnswer={answers[questions[currentQuestionIndex].id] || ''}
+        onNavigate={handleNavigate}
+        isFirstQuestion={currentQuestionIndex === 0}
+        isLastQuestion={currentQuestionIndex === questions.length - 1}
+        onFinish={() => finishExam(answers)}
       />
     </div>
   );

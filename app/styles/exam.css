@@ -1,3 +1,68 @@
+/* Agrega esto a tu archivo CSS */
+.question-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.prev-button {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.prev-button:hover {
+  background-color: #e0e0e0;
+}
+
+.next-button, .submit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.next-button:hover, .submit-button:hover {
+  background-color: #3e8e41;
+}
+
+.options {
+  margin: 1.5rem 0;
+}
+
+.option {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.question-code {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+
 .exam-container {
     max-width: 800px;
     margin: 0 auto;

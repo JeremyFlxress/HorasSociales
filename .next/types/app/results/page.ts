@@ -1,4 +1,4 @@
-// File: C:\Users\LAPTOP\Desktop\HorasSociales\Enfermedades ETS\app\results\page.js
+// File: C:\Users\jerem\Documents\GitHub\HorasSociales\app\results\page.js
 import * as entry from '../../../../app/results/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
