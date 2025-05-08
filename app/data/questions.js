@@ -28,20 +28,6 @@ export const questions = [
   },
   {
     id: 3,
-    text: "What is JavaScript?",
-    options: [
-      "A) A markup language",
-      "B) A programming language",
-      "C) A database system",
-      "D) An operating system"
-    ],
-    type: "multiple-choice",
-    answer: "B",
-    points: 25,
-    explanation: "JavaScript is a programming language used to create dynamic and interactive web content."
-  },
-  {
-    id: 4,
     text: "Which symbol is used for single line comments in JavaScript?",
     options: [
       "A) //",
@@ -55,21 +41,7 @@ export const questions = [
     explanation: "// is used for single line comments, while /* */ is used for multi-line comments."
   },
   {
-    id: 5,
-    text: "Which of the following is the correct way to declare a variable in JavaScript?",
-    options: [
-      "A) var myVar = 10;",
-      "B) variable myVar = 10;",
-      "C) v myVar = 10;",
-      "D) myVar := 10;"
-    ],
-    type: "multiple-choice",
-    answer: "A",
-    points: 25,
-    explanation: "In JavaScript, variables can be declared using var, let, or const keywords. The example uses 'var'."
-  },
-  {
-    id: 6,
+    id: 4,
     text: "Complete the code to display 'Hello World' in an alert box:",
     code: `___("Hello World");`,
     type: "fill-blank",
@@ -78,7 +50,7 @@ export const questions = [
     explanation: "The alert() function is used to display a dialog box with a message and an OK button."
   },
   {
-    id: 7,
+    id: 5,
     text: "Which function is used to add a new element at the end of an array?",
     options: [
       "A) push()",
@@ -92,7 +64,7 @@ export const questions = [
     explanation: "push() adds elements to the end of an array, while pop() removes from the end, shift() removes from the beginning, and unshift() adds to the beginning."
   },
   {
-    id: 8,
+    id: 6,
     text: "What will be the output of the following code?",
     code: `let x = 5;
 console.log(x++);`,
@@ -108,7 +80,7 @@ console.log(x++);`,
     explanation: "The post-increment operator (x++) returns the original value before incrementing. So it prints 5, then x becomes 6."
   },
   {
-    id: 9,
+    id: 7,
     text: "How do you create a function in JavaScript?",
     options: [
       "A) function = myFunction() {}",
@@ -122,7 +94,7 @@ console.log(x++);`,
     explanation: "The correct syntax to create a function in JavaScript is using the 'function' keyword followed by the function name and parentheses."
   },
   {
-    id: 10,
+    id: 8,
     text: "Which event occurs when a user clicks on an HTML element?",
     options: [
       "A) onmouseover",
@@ -136,7 +108,7 @@ console.log(x++);`,
     explanation: "The onclick event occurs when a user clicks on an HTML element."
   },
   {
-    id: 11,
+    id: 9,
     text: "Complete the code to get the element with ID 'demo':",
     code: `document.___(\"demo\");`,
     type: "fill-blank",
@@ -145,7 +117,7 @@ console.log(x++);`,
     explanation: "The getElementById() method returns the element with the specified ID."
   },
   {
-    id: 12,
+    id: 10,
     text: "What is the correct syntax for referring to an external JavaScript file?",
     options: [
       "A) <script href=\"script.js\">",
@@ -159,7 +131,7 @@ console.log(x++);`,
     explanation: "The correct attribute to specify the URL of an external JavaScript file is 'src'."
   },
   {
-    id: 13,
+    id: 11,
     text: "How do you write 'Hello World' in an alert box?",
     options: [
       "A) msgBox(\"Hello World\");",
@@ -173,7 +145,7 @@ console.log(x++);`,
     explanation: "The alert() function is used to display a message box with a specified message and an OK button."
   },
   {
-    id: 14,
+    id: 12,
     text: "How do you create a new array in JavaScript?",
     options: [
       "A) var colors = \"red\", \"green\", \"blue\";",
@@ -187,7 +159,7 @@ console.log(x++);`,
     explanation: "Arrays in JavaScript are defined with square brackets [], with elements separated by commas."
   },
   {
-    id: 15,
+    id: 13,
     text: "Complete the code to add an event listener to a button:",
     code: `document.getElementById(\"myBtn\")._____(\"click\", function() {
   alert(\"Button was clicked!\");
@@ -198,7 +170,7 @@ console.log(x++);`,
     explanation: "The addEventListener() method attaches an event handler to the specified element."
   },
   {
-    id: 16,
+    id: 14,
     text: "Which operator is used to assign a value to a variable?",
     options: [
       "A) *",
@@ -212,7 +184,7 @@ console.log(x++);`,
     explanation: "The equal sign (=) is the assignment operator. == is the equality operator that compares values."
   },
   {
-    id: 17,
+    id: 15,
     text: "How to check if a variable is not equal to a value?",
     options: [
       "A) if (x <> 5)",
@@ -226,7 +198,7 @@ console.log(x++);`,
     explanation: "The != operator checks if values are not equal. !== checks if values are not equal or not of the same type."
   },
   {
-    id: 18,
+    id: 16,
     text: "Complete the conditional statement:",
     code: `if (age < 18) {
   result = \"Too young\";
@@ -239,7 +211,7 @@ console.log(x++);`,
     explanation: "The else statement specifies a block of code to be executed if the condition in the if statement is false."
   },
   {
-    id: 19,
+    id: 17,
     text: "Which method returns the first element that matches a specified CSS selector?",
     options: [
       "A) querySelector()",
@@ -253,7 +225,7 @@ console.log(x++);`,
     explanation: "querySelector() returns the first element that matches a specified CSS selector."
   },
   {
-    id: 20,
+    id: 18,
     text: "How do you round the number 7.25 to the nearest integer?",
     options: [
       "A) Math.round(7.25)",
@@ -267,7 +239,7 @@ console.log(x++);`,
     explanation: "Math.round() returns the nearest integer to a given number."
   },
   {
-    id: 21,
+    id: 19,
     text: "Complete the template literal syntax:",
     code: `let name = \"John\";
 let greeting = \`Hello, ___\`;`,
@@ -277,7 +249,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "Template literals use ${expression} to embed expressions within the string."
   },
   {
-    id: 22,
+    id: 20,
     text: "Which method is used to remove the last element from an array?",
     options: [
       "A) last()",
@@ -291,7 +263,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "The pop() method removes the last element from an array and returns that element."
   },
   {
-    id: 23,
+    id: 21,
     text: "How to declare a JavaScript object?",
     options: [
       "A) var person = Object();",
@@ -305,7 +277,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "Objects in JavaScript can be created using object literals, which are defined with curly braces {}."
   },
   {
-    id: 24,
+    id: 22,
     text: "Complete the code to convert a string to a number:",
     code: `let num = ___(\"42\");`,
     type: "fill-blank",
@@ -314,7 +286,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "The parseInt() function parses a string and returns an integer. Another valid answer could be Number."
   },
   {
-    id: 25,
+    id: 23,
     text: "What does the 'this' keyword refer to in JavaScript?",
     options: [
       "A) The current function",
@@ -328,7 +300,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "The value of 'this' depends on how a function is called. It can refer to different objects depending on the context."
   },
   {
-    id: 26,
+    id: 24,
     text: "Which method is used to serialize an object into a JSON string?",
     options: [
       "A) JSON.parse()",
@@ -342,7 +314,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "JSON.stringify() converts a JavaScript object into a JSON string."
   },
   {
-    id: 27,
+    id: 25,
     text: "Complete the code to handle errors:",
     code: `try {
   // Code that might throw an error
@@ -355,7 +327,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "The catch statement lets you handle the error if an exception is thrown in the try block."
   },
   {
-    id: 28,
+    id: 26,
     text: "What is the output of: typeof []?",
     options: [
       "A) \"array\"",
@@ -369,7 +341,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "In JavaScript, arrays are a type of object, so typeof [] returns \"object\"."
   },
   {
-    id: 29,
+    id: 27,
     text: "Which method removes the first element of an array?",
     options: [
       "A) shift()",
@@ -383,7 +355,7 @@ let greeting = \`Hello, ___\`;`,
     explanation: "The shift() method removes the first element from an array and returns that element."
   },
   {
-    id: 30,
+    id: 28,
     text: "Complete the loop that iterates over array elements:",
     code: `const fruits = [\"apple\", \"banana\", \"orange\"];
 for (___ fruit of fruits) {
@@ -395,7 +367,7 @@ for (___ fruit of fruits) {
     explanation: "The for...of loop needs a variable declaration with let, const, or var to store each array element during iteration."
   },
   {
-    id: 31,
+    id: 29,
     text: "How do you access the value of a property in a JavaScript object?",
     options: [
       "A) person->name",
@@ -409,7 +381,7 @@ for (___ fruit of fruits) {
     explanation: "In JavaScript, object properties can be accessed using dot notation (object.property) or bracket notation (object[\"property\"])."
   },
   {
-    id: 32,
+    id: 30,
     text: "Which function is used to execute code after a specified time interval?",
     options: [
       "A) setTimeout()",
@@ -423,7 +395,7 @@ for (___ fruit of fruits) {
     explanation: "setTimeout() executes a function once after a specified delay. setInterval() repeatedly executes a function."
   },
   {
-    id: 33,
+    id: 31,
     text: "Complete the code to select all paragraph elements:",
     code: `const paragraphs = document._____(\"p\");`,
     type: "fill-blank",
@@ -432,7 +404,7 @@ for (___ fruit of fruits) {
     explanation: "querySelectorAll() returns all elements that match the specified CSS selector."
   },
   {
-    id: 34,
+    id: 32,
     text: "Which method is used to join the elements of an array into a string?",
     options: [
       "A) concat()",
@@ -446,7 +418,7 @@ for (___ fruit of fruits) {
     explanation: "The join() method joins all elements of an array into a string and returns this string."
   },
   {
-    id: 35,
+    id: 33,
     text: "What is the spread operator in JavaScript?",
     options: [
       "A) ...",
@@ -460,7 +432,7 @@ for (___ fruit of fruits) {
     explanation: "The spread syntax (...) allows an iterable to be expanded in places where zero or more arguments or elements are expected."
   },
   {
-    id: 36,
+    id: 34,
     text: "Complete the code to create a promise:",
     code: `const myPromise = new ___(function(resolve, reject) {
   // async operation
@@ -471,7 +443,7 @@ for (___ fruit of fruits) {
     explanation: "A Promise object represents a value that may not be available yet but will be resolved at some point in the future."
   },
   {
-    id: 37,
+    id: 35,
     text: "Which method is used to find an element in an array that satisfies a condition?",
     options: [
       "A) filter()",
@@ -485,7 +457,7 @@ for (___ fruit of fruits) {
     explanation: "The find() method returns the first element in an array that passes a test function."
   },
   {
-    id: 38,
+    id: 36,
     text: "What is the result of 10 + '5' in JavaScript?",
     options: [
       "A) 15",
@@ -499,7 +471,7 @@ for (___ fruit of fruits) {
     explanation: "When a number is added to a string, JavaScript converts the number to a string and performs string concatenation, resulting in \"105\"."
   },
   {
-    id: 39,
+    id: 37,
     text: "Complete the code to destructure an array:",
     code: `const numbers = [1, 2, 3, 4, 5];
 const [first, second, ...___] = numbers;`,
@@ -509,7 +481,7 @@ const [first, second, ...___] = numbers;`,
     explanation: "The rest parameter syntax (...) collects the remaining elements of an array. Any variable name can be used, but 'rest' is common."
   },
   {
-    id: 40,
+    id: 38,
     text: "Which keyword is used to declare a block-scoped variable that cannot be reassigned?",
     options: [
       "A) var",
@@ -523,7 +495,7 @@ const [first, second, ...___] = numbers;`,
     explanation: "The const keyword declares a block-scoped variable that cannot be reassigned after declaration."
   },
   {
-    id: 41,
+    id: 39,
     text: "Complete the arrow function:",
     code: `const multiply = (a, b) ___ a * b;`,
     type: "fill-blank",
@@ -532,7 +504,7 @@ const [first, second, ...___] = numbers;`,
     explanation: "The arrow function syntax uses => to separate the parameter list from the function body."
   },
   {
-    id: 42,
+    id: 40,
     text: "Which method creates a new array with the results of calling a provided function on every element?",
     options: [
       "A) forEach()",
@@ -548,7 +520,7 @@ const [first, second, ...___] = numbers;`,
 ];
 
 export const examConfig = {
-  totalPoints: 1050, // 42 questions × 25 points each
+  totalPoints: 1000, // 40 questions × 25 points each
   passingScore: 700,
   timeLimit: 3600, // 1 hour in seconds
   allowedAttempts: 3

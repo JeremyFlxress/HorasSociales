@@ -5,6 +5,12 @@
       "static/chunks/main-app.js",
       "static/chunks/app/layout.js"
     ],
+    "/exam-info/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exam-info/page.css",
+      "static/chunks/app/exam-info/page.js"
+    ],
     "/exam/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -17,11 +23,17 @@
       "static/css/app/results/page.css",
       "static/chunks/app/results/page.js"
     ],
-    "/exam-info/page": [
+    "/exam-selection/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/exam-info/page.css",
-      "static/chunks/app/exam-info/page.js"
+      "static/css/app/exam-selection/page.css",
+      "static/chunks/app/exam-selection/page.js"
+    ],
+    "/agreement-page/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/agreement-page/page.css",
+      "static/chunks/app/agreement-page/page.js"
     ]
   }
 }
