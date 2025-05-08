@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import './terminosdeuso.css';
-import { useNavigate } from 'react-router-dom';
+"use client";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation"; // Reemplazo de useNavigate()
+import "../styles/terminosdeuso.css"; // Ruta correcta para estilos
 
 const Agreement = () => {
     const [accepted, setAccepted] = useState(false);
-    const navigate = useNavigate();
+    const router = useRouter(); // Hook de navegación en Next.js
 
     const handleAcceptChange = (event) => {
         setAccepted(event.target.value === "yes");
@@ -12,20 +13,20 @@ const Agreement = () => {
 
     const handleNext = () => {
         if (accepted) {
-            navigate('/proctor-auth2'); 
+            router.push("../proctor-authPy"); 
         } else {
             alert("Debe aceptar los términos para continuar :).");
         }
     };
 
     const handlePrevious = () => {
-        navigate('/exam-selection'); 
+        router.push("../exam-selection"); 
     };
 
     return (
         <div className="agreement-page">
             <header className="header">
-                <img src="certiport.png" alt="Certiport Logo" className="logo" />
+                <img src="/certiport.png" alt="Certiport Logo" className="logo" />
             </header>
             
             <main className="content">

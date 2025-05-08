@@ -1,38 +1,39 @@
-import React, { useState } from 'react';
-import './proctorauth.css';
-import { useNavigate } from 'react-router-dom';
+"use client";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation"; // Reemplazo de useNavigate()
+import "../styles/proctorauth.css"; // Importación de estilos correcta
 
 const ProctorAuth = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const navigate = useNavigate();
+    const router = useRouter(); // Hook de navegación en Next.js
 
     const validProctor = { 
-        username: 'dany_mancia@yahoo.com', 
-        password: 'Raices29' 
+        username: "dany_mancia@yahoo.com", 
+        password: "Raices29" 
     };
 
     const handlePrevious = () => {
-        navigate('/agreement-page2'); 
+        router.push("../agreement-pagePy"); 
     };
 
     const handleNext = () => {
         if (username === validProctor.username && password === validProctor.password) {
-            navigate('/examrequirement2'); 
+            router.push("../exam-requirementsPy"); 
         } else {
-            setError('Invalid proctor username or password'); 
+            setError("Invalid proctor username or password"); 
         }
     };
 
     return (
         <div className="proctor-auth-page">
             <header className="header">
-                <img src="certiport.png" alt="Certiport Logo" className="logo" />
+                <img src="/certiport.png" alt="Certiport Logo" className="logo" />
             </header>
             
             <main className="content">
-                <h2>Exam Group: None</h2>
+               
                 <p className="notification">⚠️ Candidate, please notify the proctor that you are ready to proceed.</p>
                 
                 <div className="proctor-auth-section">

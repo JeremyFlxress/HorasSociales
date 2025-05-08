@@ -1,27 +1,27 @@
-import React from 'react';
-import './examrequirements.css';
-import { useNavigate } from 'react-router-dom';
+"use client";
+import React from "react";
+import { useRouter } from "next/navigation"; // Reemplazo de useNavigate()
+import "../styles/examrequirements.css"; // Importación de estilos correcta
 
 const ExamRequirements = () => {
-    const navigate = useNavigate();
+    const router = useRouter(); // Hook de navegación en Next.js
 
     const handlePrevious = () => {
-        navigate('/proctor-auth2'); // Ajustar esta ruta según sea necesario
+        router.push("../proctor-authPy"); 
     };
 
     const handleNext = () => {
-        navigate('/examinfo2'); 
+        router.push("../exam-infoPy"); 
     };
 
     return (
         <div className="exam-requirements-page">
             <header className="header">
-                <img src="certiport.png" alt="Certiport Logo" className="logo" />
-              
+                <img src="/certiport.png" alt="Certiport Logo" className="logo" />
             </header>
 
             <main className="content">
-                <h2>Python</h2> 
+                <h2>Python</h2>
                 <ul className="requirements-list">
                     <li><span className="checkmark">✔️</span> User Admin</li>
                     <li><span className="checkmark">✔️</span> Hardware Requirements</li>

@@ -11,7 +11,7 @@ const ExamSelection = () => {
     };
 
     const handlePython = () => {
-        router.push("/agreement-page2");
+        router.push("/agreement-pagePy");
     };
 
     return (
