@@ -1,7 +1,4 @@
 {
-  "/exam-infoPy/page": "app/exam-infoPy/page.js",
-  "/exam/page": "app/exam/page.js",
-  "/examPy/page": "app/examPy/page.js",
-  "/results/page": "app/results/page.js",
-  "/resultsPy/page": "app/resultsPy/page.js"
+  "/exam-selection/page": "app/exam-selection/page.js",
+  "/examPy/page": "app/examPy/page.js"
 }

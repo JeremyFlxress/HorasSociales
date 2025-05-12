@@ -15,7 +15,7 @@ const ExamInfo = () => {
             <div className="info-panel">
                 <div className="exam-details">
                     <h2>Welcome!</h2>
-                    <p className="exam-title">JavaScript</p>
+                    <p className="exam-title">Python</p>
                     <p>Maximum exam time: <strong>50 minutes</strong></p>
                     <p>Number of exam questions: <strong>35</strong></p>
                     <p>Minimum score required to pass exam: <strong>700</strong></p>

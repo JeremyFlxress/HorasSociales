@@ -14,6 +14,8 @@ const ExamSelection = () => {
         router.push("/agreement-pagePy");
     };
 
+    //aca deberias de agregar las dos paginas faltantes de los examenes de js y py 2
+
     return (
         <div className="exam-selection-page">
             <header className="exam-selection-header">
@@ -25,11 +27,20 @@ const ExamSelection = () => {
                     <tbody>
                         <tr>
                             <td>Information Technology Specialist</td>
-                            <td><a onClick={handleJavascript} className="exam-link">JavaScript</a></td>
+                            <td><a onClick={handleJavascript} className="exam-link">JavaScript Test 1</a></td>
                         </tr>
                         <tr>
                             <td>Information Technology Specialist</td>      
-                            <td><a onClick={handlePython} className="exam-link">Python</a></td>
+                            <td><a onClick={handleJavascript} className="exam-link">JavaScript Test 2</a></td> 
+                        </tr>
+                        <tr>
+                            <td>Information Technology Specialist</td>      
+                            <td><a onClick={handlePython} className="exam-link">Python Test 1</a></td>
+                        </tr>
+                      
+                        <tr>
+                            <td>Information Technology Specialist</td>      
+                            <td><a onClick={handlePython} className="exam-link">Python Test</a></td>
                         </tr>
                     </tbody>                        
                 </table>
