@@ -6,12 +6,26 @@ import "../styles/examselection.css"; // Ruta correcta para Next.js
 const ExamSelection = () => {
     const router = useRouter();
 
-    const handleJavascript = () => {
-        router.push("../agreement-page"); 
+    const handleJavascript = (e) => {
+        const valor = e.currentTarget.dataset.valor;
+
+        if(valor === "test1"){
+            router.push("/agreements/agreement-page1"); // Cambia la ruta según tu estructura de carpetas
+        } 
+        if(valor === "test2"){
+            router.push("/agreements/agreement-page2"); // Cambia la ruta según tu estructura de carpetas
+        }
     };
 
-    const handlePython = () => {
-        router.push("/agreement-pagePy");
+    const handlePython = (e) => {
+        const valor = e.currentTarget.dataset.valor;
+
+        if(valor === "test1"){
+            router.push("/agreements/agreement-pagePy1"); // Cambia la ruta según tu estructura de carpetas
+        } 
+        if(valor === "test2"){
+            router.push("/agreements/agreement-pagePy2"); // Cambia la ruta según tu estructura de carpetas
+        }
     };
 
     //aca deberias de agregar las dos paginas faltantes de los examenes de js y py 2
@@ -27,20 +41,20 @@ const ExamSelection = () => {
                     <tbody>
                         <tr>
                             <td>Information Technology Specialist</td>
-                            <td><a onClick={handleJavascript} className="exam-link">JavaScript Test 1</a></td>
+                            <td><a onClick={handleJavascript} data-valor="test1" className="exam-link">JavaScript Test 1</a></td>
                         </tr>
                         <tr>
                             <td>Information Technology Specialist</td>      
-                            <td><a onClick={handleJavascript} className="exam-link">JavaScript Test 2</a></td> 
+                            <td><a onClick={handleJavascript} data-valor="test2" className="exam-link">JavaScript Test 2</a></td> 
                         </tr>
                         <tr>
                             <td>Information Technology Specialist</td>      
-                            <td><a onClick={handlePython} className="exam-link">Python Test 1</a></td>
+                            <td><a onClick={handlePython} data-valor="test1" className="exam-link">Python Test 1</a></td>
                         </tr>
                       
                         <tr>
                             <td>Information Technology Specialist</td>      
-                            <td><a onClick={handlePython} className="exam-link">Python Test</a></td>
+                            <td><a onClick={handlePython} data-valor="test2" className="exam-link">Python Test</a></td>
                         </tr>
                     </tbody>                        
                 </table>

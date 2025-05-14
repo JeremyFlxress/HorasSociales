@@ -15,6 +15,7 @@ const Login = () => {
     { email: "estudiante3@raices.superate.org.sv", password: "Raices29" },
     { email: "estudiante4@raices.superate.org.sv", password: "Raices29" },
     { email: "estudiante5@raices.superate.org.sv", password: "Raices29" },
+    { email: "1", password: "1" },
   ];
 
   const handleLogin = () => {
