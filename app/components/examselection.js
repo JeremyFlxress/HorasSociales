@@ -54,7 +54,7 @@ const ExamSelection = () => {
                       
                         <tr>
                             <td>Information Technology Specialist</td>      
-                            <td><a onClick={handlePython} data-valor="test2" className="exam-link">Python Test</a></td>
+                            <td><a onClick={handlePython} data-valor="test2" className="exam-link">Python Test 2</a></td>
                         </tr>
                     </tbody>                        
                 </table>

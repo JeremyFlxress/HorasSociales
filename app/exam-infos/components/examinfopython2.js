@@ -7,7 +7,7 @@ const ExamInfo = () => {
     const router = useRouter(); // Hook de navegación en Next.js
 
     const handleStartExam = () => {
-        router.push("../../exams/examPy1");// Redireccionamiento a la página de examen
+        router.push("../../exams/examPy2");// Redireccionamiento a la página de examen
     };
 
     return (

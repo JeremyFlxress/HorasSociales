@@ -1,8 +1,7 @@
 {
-  "/exam-requirement/exam-requirements1/page": "app/exam-requirement/exam-requirements1/page.js",
+  "/exam-infos/exam-infoPy1/page": "app/exam-infos/exam-infoPy1/page.js",
+  "/exams/examPy2/page": "app/exams/examPy2/page.js",
   "/exam-infos/exam-info1/page": "app/exam-infos/exam-info1/page.js",
   "/exams/exam1/page": "app/exams/exam1/page.js",
-  "/exams/exam2/page": "app/exams/exam2/page.js",
-  "/exams/examPy1/page": "app/exams/examPy1/page.js",
-  "/result/resultsPy1/page": "app/result/resultsPy1/page.js"
+  "/exams/exam2/page": "app/exams/exam2/page.js"
 }

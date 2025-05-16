@@ -1,4 +1,4 @@
-// File: C:\Users\LAPTOP\Desktop\HorasSociales\Enfermedades ETS\app\proctors\proctor-auth1\page.js
+// File: C:\Users\jerem\Documents\GitHub\HorasSociales\app\proctors\proctor-auth1\page.js
 import * as entry from '../../../../../app/proctors/proctor-auth1/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

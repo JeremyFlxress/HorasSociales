@@ -1,521 +1,504 @@
 export const questions = [
   {
     id: 1,
-    text: "Complete the countdown function:",
-    code: `function countdown(start) {
-  for (var i=start; i>=0; i-___) {
-    console.log(i);
-  }
+    text: "Complete the code to iterate through the properties of an object:",
+    code: `const person = {name: "John", age: 30, job: "Developer"};
+for (let key ___ person) {
+  console.log(key + ": " + person[key]);
 }`,
     type: "fill-blank",
-    answer: "--",
+    answer: "in",
     points: 25,
-    explanation: "The loop needs to decrement the counter using the -- operator."
+    explanation: "The for...in loop is used to iterate over the enumerable properties of an object."
   },
   {
     id: 2,
-    text: "Which line of code should you use at line 09?",
+    text: "What is the result of the following expression?",
+    code: `console.log(2 + "2" - 1);`,
     options: [
-      "A) document.getElementById(\"para\").innerHTML += rooms[i];",
-      "B) document.getElementById(\"para\").innerHTML = rooms[i]+ \"<br/>\";",
-      "C) document.getElementById(\"para\").innerHTML += rooms[i]+<br/>;",
-      "D) document.getElementById(\"para\").innerHTML += rooms[i]+ \"<br/>\";"
+      "A) 21",
+      "B) 3",
+      "C) \"21\"",
+      "D) NaN"
+    ],
+    type: "multiple-choice",
+    answer: "A",
+    points: 25,
+    explanation: "In JavaScript, 2 + \"2\" becomes \"22\" (string concatenation), then \"22\" - 1 converts the string to a number and subtracts 1, resulting in 21."
+  },
+  {
+    id: 3,
+    text: "Complete the code to stop a form from submitting:",
+    code: `document.getElementById(\"myForm\").addEventListener(\"submit\", function(event) {
+  ___.preventDefault();
+});`,
+    type: "fill-blank",
+    answer: "event",
+    points: 25,
+    explanation: "The preventDefault() method is called on the event object to stop the form from submitting."
+  },
+  {
+    id: 4,
+    text: "What method would you use to add a CSS class to an element?",
+    options: [
+      "A) element.addClass(\"newClass\")",
+      "B) element.class += \"newClass\"",
+      "C) element.classList.add(\"newClass\")",
+      "D) element.className = \"newClass\""
+    ],
+    type: "multiple-choice",
+    answer: "C",
+    points: 25,
+    explanation: "The classList.add() method adds a CSS class to an element without overwriting existing classes."
+  },
+  {
+    id: 5,
+    text: "Complete the code to get the length of an array:",
+    code: `const fruits = [\"apple\", \"banana\", \"orange\"];
+console.log(fruits.___);`,
+    type: "fill-blank",
+    answer: "length",
+    points: 25,
+    explanation: "The length property returns the number of elements in an array."
+  },
+  {
+    id: 6,
+    text: "Which operator would you use to check if a variable is of a specific type?",
+    options: [
+      "A) istype",
+      "B) instanceof",
+      "C) typeof",
+      "D) typeOf"
+    ],
+    type: "multiple-choice",
+    answer: "C",
+    points: 25,
+    explanation: "The typeof operator returns a string indicating the type of the operand."
+  },
+  {
+    id: 7,
+    text: "Complete the code to define a default parameter:",
+    code: `function greet(name ___ \"Guest\") {
+  return \"Hello, \" + name;
+}`,
+    type: "fill-blank",
+    answer: "=",
+    points: 25,
+    explanation: "Default parameters are set using the assignment operator (=) in the function parameter list."
+  },
+  {
+    id: 8,
+    text: "What is the correct way to check if a variable is NOT undefined?",
+    options: [
+      "A) if (variable !== undefined)",
+      "B) if (typeof variable !== \"undefined\")",
+      "C) if (!variable.isUndefined())",
+      "D) if (defined(variable))"
+    ],
+    type: "multiple-choice",
+    answer: "B",
+    points: 25,
+    explanation: "Using typeof prevents errors if the variable hasn't been declared, making option B the safest approach."
+  },
+  {
+    id: 9,
+    text: "Complete the code to convert a JSON string to an object:",
+    code: `const jsonStr = '{\"name\":\"John\", \"age\":30}';
+const person = JSON._____(jsonStr);`,
+    type: "fill-blank",
+    answer: "parse",
+    points: 25,
+    explanation: "The JSON.parse() method parses a JSON string and returns a JavaScript object."
+  },
+  {
+    id: 10,
+    text: "Which statement correctly creates a Date object for January 1, 2023?",
+    options: [
+      "A) new Date(\"2023-01-01\")",
+      "B) new Date(2023, 0, 1)",
+      "C) Date(\"01/01/2023\")",
+      "D) Both A and B are correct"
     ],
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "Option D correctly appends each room with a line break."
+    explanation: "Both formats work: a string in ISO format (\"2023-01-01\") or parameters (year, month, day) where months are zero-indexed (0 is January)."
   },
   {
-    id: 3,
-    text: "Which symbol is used for single line comments in JavaScript?",
-    options: [
-      "A) //",
-      "B) /* */",
-      "C) #",
-      "D) $"
-    ],
-    type: "multiple-choice",
-    answer: "A",
-    points: 25,
-    explanation: "// is used for single line comments, while /* */ is used for multi-line comments."
-  },
-  {
-    id: 4,
-    text: "Complete the code to display 'Hello World' in an alert box:",
-    code: `___("Hello World");`,
+    id: 11,
+    text: "Complete the code to hide an element by changing its CSS:",
+    code: `document.getElementById(\"myElement\").style.___ = \"none\";`,
     type: "fill-blank",
-    answer: "alert",
+    answer: "display",
     points: 25,
-    explanation: "The alert() function is used to display a dialog box with a message and an OK button."
+    explanation: "Setting the display property to \"none\" hides an element in the DOM."
   },
   {
-    id: 5,
-    text: "Which function is used to add a new element at the end of an array?",
+    id: 12,
+    text: "What is the correct way to write a JavaScript multiline comment?",
     options: [
-      "A) push()",
-      "B) pop()",
-      "C) shift()",
-      "D) unshift()"
+      "A) // This is a comment //",
+      "B) <!-- This is a comment -->",
+      "C) /* This is a comment */",
+      "D) ** This is a comment **"
     ],
     type: "multiple-choice",
-    answer: "A",
+    answer: "C",
     points: 25,
-    explanation: "push() adds elements to the end of an array, while pop() removes from the end, shift() removes from the beginning, and unshift() adds to the beginning."
+    explanation: "JavaScript uses /* and */ for multiline comments."
   },
   {
-    id: 6,
-    text: "What will be the output of the following code?",
-    code: `let x = 5;
-console.log(x++);`,
+    id: 13,
+    text: "Complete the code to get a random number between 1 and 10:",
+    code: `function getRandomNumber() {
+  return Math._____(Math.random() * 10) + 1;
+}`,
+    type: "fill-blank",
+    answer: "floor",
+    points: 25,
+    explanation: "Math.floor() rounds down to the nearest integer. Math.random() * 10 gives a number from 0 to 9.999..., then adding 1 gives a number from 1 to 10.999..., which is floored to 1-10."
+  },
+  {
+    id: 14,
+    text: "What is the result of the following code?",
+    code: `let x = 10;
+let y = \"10\";
+console.log(x == y);`,
     options: [
-      "A) 5",
-      "B) 6",
+      "A) true",
+      "B) false",
       "C) undefined",
       "D) Error"
     ],
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The post-increment operator (x++) returns the original value before incrementing. So it prints 5, then x becomes 6."
-  },
-  {
-    id: 7,
-    text: "How do you create a function in JavaScript?",
-    options: [
-      "A) function = myFunction() {}",
-      "B) function myFunction() {}",
-      "C) function:myFunction() {}",
-      "D) create function myFunction() {}"
-    ],
-    type: "multiple-choice",
-    answer: "B",
-    points: 25,
-    explanation: "The correct syntax to create a function in JavaScript is using the 'function' keyword followed by the function name and parentheses."
-  },
-  {
-    id: 8,
-    text: "Which event occurs when a user clicks on an HTML element?",
-    options: [
-      "A) onmouseover",
-      "B) onchange",
-      "C) onclick",
-      "D) onmouseclick"
-    ],
-    type: "multiple-choice",
-    answer: "C",
-    points: 25,
-    explanation: "The onclick event occurs when a user clicks on an HTML element."
-  },
-  {
-    id: 9,
-    text: "Complete the code to get the element with ID 'demo':",
-    code: `document.___(\"demo\");`,
-    type: "fill-blank",
-    answer: "getElementById",
-    points: 25,
-    explanation: "The getElementById() method returns the element with the specified ID."
-  },
-  {
-    id: 10,
-    text: "What is the correct syntax for referring to an external JavaScript file?",
-    options: [
-      "A) <script href=\"script.js\">",
-      "B) <script name=\"script.js\">",
-      "C) <script src=\"script.js\">",
-      "D) <script file=\"script.js\">"
-    ],
-    type: "multiple-choice",
-    answer: "C",
-    points: 25,
-    explanation: "The correct attribute to specify the URL of an external JavaScript file is 'src'."
-  },
-  {
-    id: 11,
-    text: "How do you write 'Hello World' in an alert box?",
-    options: [
-      "A) msgBox(\"Hello World\");",
-      "B) alertBox(\"Hello World\");",
-      "C) msg(\"Hello World\");",
-      "D) alert(\"Hello World\");"
-    ],
-    type: "multiple-choice",
-    answer: "D",
-    points: 25,
-    explanation: "The alert() function is used to display a message box with a specified message and an OK button."
-  },
-  {
-    id: 12,
-    text: "How do you create a new array in JavaScript?",
-    options: [
-      "A) var colors = \"red\", \"green\", \"blue\";",
-      "B) var colors = (1:\"red\", 2:\"green\", 3:\"blue\");",
-      "C) var colors = [\"red\", \"green\", \"blue\"];",
-      "D) var colors = 1=(\"red\"), 2=(\"green\"), 3=(\"blue\");"
-    ],
-    type: "multiple-choice",
-    answer: "C",
-    points: 25,
-    explanation: "Arrays in JavaScript are defined with square brackets [], with elements separated by commas."
-  },
-  {
-    id: 13,
-    text: "Complete the code to add an event listener to a button:",
-    code: `document.getElementById(\"myBtn\")._____(\"click\", function() {
-  alert(\"Button was clicked!\");
-});`,
-    type: "fill-blank",
-    answer: "addEventListener",
-    points: 25,
-    explanation: "The addEventListener() method attaches an event handler to the specified element."
-  },
-  {
-    id: 14,
-    text: "Which operator is used to assign a value to a variable?",
-    options: [
-      "A) *",
-      "B) =",
-      "C) ==",
-      "D) -"
-    ],
-    type: "multiple-choice",
-    answer: "B",
-    points: 25,
-    explanation: "The equal sign (=) is the assignment operator. == is the equality operator that compares values."
+    explanation: "The == operator performs type conversion, so a number 10 is considered equal to the string \"10\"."
   },
   {
     id: 15,
-    text: "How to check if a variable is not equal to a value?",
-    options: [
-      "A) if (x <> 5)",
-      "B) if (x != 5)",
-      "C) if (x !== 5)",
-      "D) if (x not 5)"
-    ],
-    type: "multiple-choice",
-    answer: "B",
+    text: "Complete the code to execute a function repeatedly at specified intervals:",
+    code: `const intervalId = window._____(function() {
+  console.log(\"Hello\");
+}, 1000);`,
+    type: "fill-blank",
+    answer: "setInterval",
     points: 25,
-    explanation: "The != operator checks if values are not equal. !== checks if values are not equal or not of the same type."
+    explanation: "The setInterval() method calls a function repeatedly at specified intervals (in milliseconds)."
   },
   {
     id: 16,
-    text: "Complete the conditional statement:",
-    code: `if (age < 18) {
-  result = \"Too young\";
-} ___ {
-  result = \"Old enough\";
-}`,
-    type: "fill-blank",
-    answer: "else",
-    points: 25,
-    explanation: "The else statement specifies a block of code to be executed if the condition in the if statement is false."
-  },
-  {
-    id: 17,
-    text: "Which method returns the first element that matches a specified CSS selector?",
+    text: "Which HTML event is triggered when a user stops typing in an input field?",
     options: [
-      "A) querySelector()",
-      "B) getElementById()",
-      "C) getElementsByClassName()",
-      "D) getElementsByTagName()"
-    ],
-    type: "multiple-choice",
-    answer: "A",
-    points: 25,
-    explanation: "querySelector() returns the first element that matches a specified CSS selector."
-  },
-  {
-    id: 18,
-    text: "How do you round the number 7.25 to the nearest integer?",
-    options: [
-      "A) Math.round(7.25)",
-      "B) Math.rnd(7.25)",
-      "C) round(7.25)",
-      "D) rnd(7.25)"
-    ],
-    type: "multiple-choice",
-    answer: "A",
-    points: 25,
-    explanation: "Math.round() returns the nearest integer to a given number."
-  },
-  {
-    id: 19,
-    text: "Complete the template literal syntax:",
-    code: `let name = \"John\";
-let greeting = \`Hello, ___\`;`,
-    type: "fill-blank",
-    answer: "${name}",
-    points: 25,
-    explanation: "Template literals use ${expression} to embed expressions within the string."
-  },
-  {
-    id: 20,
-    text: "Which method is used to remove the last element from an array?",
-    options: [
-      "A) last()",
-      "B) get()",
-      "C) pop()",
-      "D) remove()"
-    ],
-    type: "multiple-choice",
-    answer: "C",
-    points: 25,
-    explanation: "The pop() method removes the last element from an array and returns that element."
-  },
-  {
-    id: 21,
-    text: "How to declare a JavaScript object?",
-    options: [
-      "A) var person = Object();",
-      "B) var person = {};",
-      "C) var person = [];",
-      "D) var person = new Array();"
+      "A) onchange",
+      "B) onkeyup",
+      "C) onblur",
+      "D) onstop"
     ],
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "Objects in JavaScript can be created using object literals, which are defined with curly braces {}."
+    explanation: "The onkeyup event is triggered when a user releases a key after typing in an input field."
   },
   {
-    id: 22,
-    text: "Complete the code to convert a string to a number:",
-    code: `let num = ___(\"42\");`,
+    id: 17,
+    text: "Complete the code to replace all occurrences of a substring in a string:",
+    code: `const str = \"Hello World\";
+const newStr = str._____(\"o\", \"x\");`,
     type: "fill-blank",
-    answer: "parseInt",
+    answer: "replaceAll",
     points: 25,
-    explanation: "The parseInt() function parses a string and returns an integer. Another valid answer could be Number."
+    explanation: "The replaceAll() method replaces all occurrences of a specified substring with another substring."
   },
   {
-    id: 23,
-    text: "What does the 'this' keyword refer to in JavaScript?",
+    id: 18,
+    text: "What is the correct way to check if a variable is an array?",
     options: [
-      "A) The current function",
-      "B) The global object",
-      "C) The object the function is a property of",
-      "D) It depends on how the function is called"
+      "A) typeof variable === \"array\"",
+      "B) variable instanceof Array",
+      "C) Array.isArray(variable)",
+      "D) Both B and C are correct"
     ],
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "The value of 'this' depends on how a function is called. It can refer to different objects depending on the context."
+    explanation: "Both Array.isArray() and the instanceof operator can determine if a variable is an array."
+  },
+  {
+    id: 19,
+    text: "Complete the code to combine two arrays:",
+    code: `const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combined = array1._____(array2);`,
+    type: "fill-blank",
+    answer: "concat",
+    points: 25,
+    explanation: "The concat() method is used to merge two or more arrays and returns a new array."
+  },
+  {
+    id: 20,
+    text: "What method is used to execute a function once after a delay?",
+    options: [
+      "A) wait()",
+      "B) setTimeout()",
+      "C) setDelay()",
+      "D) delay()"
+    ],
+    type: "multiple-choice",
+    answer: "B",
+    points: 25,
+    explanation: "The setTimeout() function executes a specified function once after a specified delay (in milliseconds)."
+  },
+  {
+    id: 21,
+    text: "Complete the code to get the button that was clicked in an event handler:",
+    code: `document.querySelectorAll(\"button\").forEach(function(button) {
+  button.addEventListener(\"click\", function(event) {
+    console.log(___.target);
+  });
+});`,
+    type: "fill-blank",
+    answer: "event",
+    points: 25,
+    explanation: "The event.target property returns the element that triggered the event."
+  },
+  {
+    id: 22,
+    text: "What is the purpose of the localStorage object in JavaScript?",
+    options: [
+      "A) To store data temporarily while the page is loaded",
+      "B) To store data that persists across browser sessions",
+      "C) To store data on the server",
+      "D) To store data for exactly one day"
+    ],
+    type: "multiple-choice",
+    answer: "B",
+    points: 25,
+    explanation: "localStorage stores data with no expiration date that persists even after the browser is closed and reopened."
+  },
+  {
+    id: 23,
+    text: "Complete the code to check if a string includes a substring:",
+    code: `const message = \"Hello, welcome to JavaScript!\";
+const containsJS = message._____(\"JavaScript\");`,
+    type: "fill-blank",
+    answer: "includes",
+    points: 25,
+    explanation: "The includes() method determines whether a string contains the specified substring."
   },
   {
     id: 24,
-    text: "Which method is used to serialize an object into a JSON string?",
+    text: "Which method can be used to perform an action for each element in an array?",
     options: [
-      "A) JSON.parse()",
-      "B) JSON.stringify()",
-      "C) JSON.toText()",
-      "D) JSON.toString()"
+      "A) every()",
+      "B) each()",
+      "C) loop()",
+      "D) forEach()"
     ],
     type: "multiple-choice",
-    answer: "B",
+    answer: "D",
     points: 25,
-    explanation: "JSON.stringify() converts a JavaScript object into a JSON string."
+    explanation: "The forEach() method executes a provided function once for each array element."
   },
   {
     id: 25,
-    text: "Complete the code to handle errors:",
-    code: `try {
-  // Code that might throw an error
-} ___ (error) {
-  console.log(error.message);
-}`,
+    text: "Complete the code to get the current year:",
+    code: `const currentYear = new Date().___();`,
     type: "fill-blank",
-    answer: "catch",
+    answer: "getFullYear",
     points: 25,
-    explanation: "The catch statement lets you handle the error if an exception is thrown in the try block."
+    explanation: "The getFullYear() method returns the year of the specified date according to local time."
   },
   {
     id: 26,
-    text: "What is the output of: typeof []?",
+    text: "What is the output of the following code?",
+    code: `const arr = [1, 2, 3];
+arr[10] = 10;
+console.log(arr.length);`,
     options: [
-      "A) \"array\"",
-      "B) \"object\"",
-      "C) \"undefined\"",
-      "D) \"null\""
+      "A) 3",
+      "B) 10",
+      "C) 11",
+      "D) Error"
     ],
     type: "multiple-choice",
-    answer: "B",
+    answer: "C",
     points: 25,
-    explanation: "In JavaScript, arrays are a type of object, so typeof [] returns \"object\"."
+    explanation: "Setting an array element with an index beyond the current length extends the array. The length becomes index + 1, which is 11."
   },
   {
     id: 27,
-    text: "Which method removes the first element of an array?",
-    options: [
-      "A) shift()",
-      "B) unshift()",
-      "C) pop()",
-      "D) splice()"
-    ],
-    type: "multiple-choice",
-    answer: "A",
+    text: "Complete the code to split a string into an array of substrings:",
+    code: `const names = \"John,Jane,Mark,Lisa\";
+const namesArray = names.___(\",\");`,
+    type: "fill-blank",
+    answer: "split",
     points: 25,
-    explanation: "The shift() method removes the first element from an array and returns that element."
+    explanation: "The split() method divides a string into an array of substrings using a specified separator."
   },
   {
     id: 28,
-    text: "Complete the loop that iterates over array elements:",
-    code: `const fruits = [\"apple\", \"banana\", \"orange\"];
-for (___ fruit of fruits) {
-  console.log(fruit);
-}`,
-    type: "fill-blank",
-    answer: "let",
+    text: "Which method creates a new array with all elements that pass a test?",
+    options: [
+      "A) find()",
+      "B) some()",
+      "C) filter()",
+      "D) select()"
+    ],
+    type: "multiple-choice",
+    answer: "C",
     points: 25,
-    explanation: "The for...of loop needs a variable declaration with let, const, or var to store each array element during iteration."
+    explanation: "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
   },
   {
     id: 29,
-    text: "How do you access the value of a property in a JavaScript object?",
-    options: [
-      "A) person->name",
-      "B) person.name or person[\"name\"]",
-      "C) person=>name",
-      "D) person::name"
-    ],
-    type: "multiple-choice",
-    answer: "B",
+    text: "Complete the code to make the first letter of a string uppercase:",
+    code: `function capitalize(str) {
+  return str.charAt(0)._____ + str.slice(1);
+}`,
+    type: "fill-blank",
+    answer: "toUpperCase",
     points: 25,
-    explanation: "In JavaScript, object properties can be accessed using dot notation (object.property) or bracket notation (object[\"property\"])."
+    explanation: "The toUpperCase() method converts a string to uppercase letters."
   },
   {
     id: 30,
-    text: "Which function is used to execute code after a specified time interval?",
+    text: "What is the correct way to create a JavaScript Date object for the current date and time?",
     options: [
-      "A) setTimeout()",
-      "B) setInterval()",
-      "C) delay()",
-      "D) sleep()"
+      "A) var now = Date.current();",
+      "B) var now = new Date();",
+      "C) var now = Date.now;",
+      "D) var now = Date.today();"
     ],
     type: "multiple-choice",
-    answer: "A",
+    answer: "B",
     points: 25,
-    explanation: "setTimeout() executes a function once after a specified delay. setInterval() repeatedly executes a function."
+    explanation: "The new Date() constructor creates a Date object representing the current date and time."
   },
   {
     id: 31,
-    text: "Complete the code to select all paragraph elements:",
-    code: `const paragraphs = document._____(\"p\");`,
+    text: "Complete the code to check if all array elements pass a test:",
+    code: `const numbers = [1, 2, 3, 4, 5];
+const allPositive = numbers._____(num => num > 0);`,
     type: "fill-blank",
-    answer: "querySelectorAll",
+    answer: "every",
     points: 25,
-    explanation: "querySelectorAll() returns all elements that match the specified CSS selector."
+    explanation: "The every() method tests whether all elements in the array pass the test implemented by the provided function."
   },
   {
     id: 32,
-    text: "Which method is used to join the elements of an array into a string?",
+    text: "What is the purpose of the optional chaining operator (?.) in JavaScript?",
     options: [
-      "A) concat()",
-      "B) merge()",
-      "C) join()",
-      "D) combine()"
+      "A) To perform mathematical operations conditionally",
+      "B) To access object properties safely without causing an error if a property is undefined",
+      "C) To check if a variable exists before using it",
+      "D) To create conditional functions"
+    ],
+    type: "multiple-choice",
+    answer: "B",
+    points: 25,
+    explanation: "The optional chaining operator (?.) allows reading the value of a property located deep within a chain of connected objects without having to validate each reference in the chain."
+  },
+  {
+    id: 33,
+    text: "Complete the code to copy an array:",
+    code: `const original = [1, 2, 3];
+const copy = [...___];`,
+    type: "fill-blank",
+    answer: "original",
+    points: 25,
+    explanation: "The spread operator (...) can be used to create a shallow copy of an array."
+  },
+  {
+    id: 34,
+    text: "Which method is used to sort an array in JavaScript?",
+    options: [
+      "A) order()",
+      "B) arrange()",
+      "C) sort()",
+      "D) organize()"
     ],
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The join() method joins all elements of an array into a string and returns this string."
+    explanation: "The sort() method sorts the elements of an array in place and returns the sorted array."
   },
   {
-    id: 33,
-    text: "What is the spread operator in JavaScript?",
+    id: 35,
+    text: "Complete the code to remove whitespace from both ends of a string:",
+    code: `const username = \"  john.doe  \";
+const trimmedUsername = username.___();`,
+    type: "fill-blank",
+    answer: "trim",
+    points: 25,
+    explanation: "The trim() method removes whitespace from both ends of a string."
+  },
+  {
+    id: 36,
+    text: "What does the isNaN() function do?",
     options: [
-      "A) ...",
-      "B) ***",
-      "C) &&&",
-      "D) ==="
+      "A) Checks if the value is not a number",
+      "B) Checks if the value is null",
+      "C) Checks if the value is undefined",
+      "D) Checks if the value is zero"
     ],
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The spread syntax (...) allows an iterable to be expanded in places where zero or more arguments or elements are expected."
-  },
-  {
-    id: 34,
-    text: "Complete the code to create a promise:",
-    code: `const myPromise = new ___(function(resolve, reject) {
-  // async operation
-});`,
-    type: "fill-blank",
-    answer: "Promise",
-    points: 25,
-    explanation: "A Promise object represents a value that may not be available yet but will be resolved at some point in the future."
-  },
-  {
-    id: 35,
-    text: "Which method is used to find an element in an array that satisfies a condition?",
-    options: [
-      "A) filter()",
-      "B) find()",
-      "C) search()",
-      "D) locate()"
-    ],
-    type: "multiple-choice",
-    answer: "B",
-    points: 25,
-    explanation: "The find() method returns the first element in an array that passes a test function."
-  },
-  {
-    id: 36,
-    text: "What is the result of 10 + '5' in JavaScript?",
-    options: [
-      "A) 15",
-      "B) \"105\"",
-      "C) Error",
-      "D) \"10+5\""
-    ],
-    type: "multiple-choice",
-    answer: "B",
-    points: 25,
-    explanation: "When a number is added to a string, JavaScript converts the number to a string and performs string concatenation, resulting in \"105\"."
+    explanation: "The isNaN() function determines whether a value is NaN (Not-a-Number)."
   },
   {
     id: 37,
-    text: "Complete the code to destructure an array:",
-    code: `const numbers = [1, 2, 3, 4, 5];
-const [first, second, ...___] = numbers;`,
+    text: "Complete the code to find the maximum value in an array of numbers:",
+    code: `const numbers = [5, 2, 9, 1, 7];
+const max = Math.___(...numbers);`,
     type: "fill-blank",
-    answer: "rest",
+    answer: "max",
     points: 25,
-    explanation: "The rest parameter syntax (...) collects the remaining elements of an array. Any variable name can be used, but 'rest' is common."
+    explanation: "The Math.max() function returns the largest of the provided numbers."
   },
   {
     id: 38,
-    text: "Which keyword is used to declare a block-scoped variable that cannot be reassigned?",
+    text: "What will the following code log to the console?",
+    code: `let a = 5;
+let b = a;
+a = 10;
+console.log(b);`,
     options: [
-      "A) var",
-      "B) let",
-      "C) const",
-      "D) fixed"
+      "A) 5",
+      "B) 10",
+      "C) undefined",
+      "D) Error"
     ],
     type: "multiple-choice",
-    answer: "C",
+    answer: "A",
     points: 25,
-    explanation: "The const keyword declares a block-scoped variable that cannot be reassigned after declaration."
+    explanation: "Primitive values like numbers are copied by value, not by reference. Changing a doesn't affect b."
   },
   {
     id: 39,
-    text: "Complete the arrow function:",
-    code: `const multiply = (a, b) ___ a * b;`,
+    text: "Complete the code to execute an async function and handle its result:",
+    code: `asyncFunction()
+  ._____((result) => console.log(result))
+  .catch((error) => console.error(error));`,
     type: "fill-blank",
-    answer: "=>",
+    answer: "then",
     points: 25,
-    explanation: "The arrow function syntax uses => to separate the parameter list from the function body."
+    explanation: "The then() method is used to handle the fulfillment of a Promise returned by an async function."
   },
   {
     id: 40,
-    text: "Which method creates a new array with the results of calling a provided function on every element?",
+    text: "Which method is used to extract a section of a string?",
     options: [
-      "A) forEach()",
-      "B) map()",
-      "C) reduce()",
-      "D) filter()"
+      "A) slice()",
+      "B) cut()",
+      "C) section()",
+      "D) extract()"
     ],
     type: "multiple-choice",
-    answer: "B",
+    answer: "A",
     points: 25,
-    explanation: "The map() method creates a new array with the results of calling a function on every element in the original array."
+    explanation: "The slice() method extracts a section of a string and returns it as a new string."
   }
 ];
 

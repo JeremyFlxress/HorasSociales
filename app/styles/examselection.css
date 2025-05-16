@@ -67,7 +67,8 @@ body, html {
 }
 
 .exam-table a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .footer {

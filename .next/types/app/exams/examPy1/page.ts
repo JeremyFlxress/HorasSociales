@@ -1,4 +1,4 @@
-// File: C:\Users\LAPTOP\Desktop\HorasSociales\Enfermedades ETS\app\exams\examPy1\page.js
+// File: C:\Users\jerem\Documents\GitHub\HorasSociales\app\exams\examPy1\page.js
 import * as entry from '../../../../../app/exams/examPy1/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
