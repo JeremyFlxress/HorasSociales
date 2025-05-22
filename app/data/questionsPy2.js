@@ -523,7 +523,7 @@ reversed_list = original[___]`,
 
 export const examConfig = {
   totalPoints: 1000, // 40 questions × 25 points each
-  passingScore: 700,
+  passingScore: 800,
   timeLimit: 3600, // 1 hour in seconds
   allowedAttempts: 3
 };

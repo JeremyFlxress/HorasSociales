@@ -19,7 +19,7 @@ export default function ResultsPage() {
   // Redirigir si faltan parámetros
   useEffect(() => {
     if (!scoreParam || !answersParam) {
-      router.push('../../exams/examPy');
+      router.push('../../exams/examPy1');
     }
   }, [scoreParam, answersParam, router]);
 
@@ -200,7 +200,7 @@ export default function ResultsPage() {
         
         <div className="action-buttons">
           <button 
-            onClick={() => router.push('../../exams/examPy')}
+            onClick={() => router.push('../../exams/examPy1')}
             className="retry-button"
           >
             Volver a intentar

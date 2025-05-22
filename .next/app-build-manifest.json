@@ -5,29 +5,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/layout.js"
     ],
-    "/agreements/agreement-page2/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/agreements/agreement-page2/page.css",
-      "static/chunks/app/agreements/agreement-page2/page.js"
-    ],
-    "/proctors/proctor-auth2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/proctors/proctor-auth2/page.css",
-      "static/chunks/app/proctors/proctor-auth2/page.js"
-    ],
-    "/exam-requirement/exam-requirements1/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exam-requirement/exam-requirements1/page.css",
-      "static/chunks/app/exam-requirement/exam-requirements1/page.js"
-    ],
-    "/exam-infos/exam-info1/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exam-infos/exam-info1/page.css",
-      "static/chunks/app/exam-infos/exam-info1/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/exams/exam1/page": [
       "static/chunks/webpack.js",
@@ -35,17 +17,17 @@
       "static/css/app/exams/exam1/page.css",
       "static/chunks/app/exams/exam1/page.js"
     ],
-    "/agreements/agreement-page1/page": [
+    "/result/results1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/agreements/agreement-page1/page.css",
-      "static/chunks/app/agreements/agreement-page1/page.js"
+      "static/css/app/result/results1/page.css",
+      "static/chunks/app/result/results1/page.js"
     ],
-    "/proctors/proctor-auth1/page": [
+    "/exam-setup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/proctors/proctor-auth1/page.css",
-      "static/chunks/app/proctors/proctor-auth1/page.js"
+      "static/css/app/exam-setup/page.css",
+      "static/chunks/app/exam-setup/page.js"
     ],
     "/exam-selection/page": [
       "static/chunks/webpack.js",
@@ -82,48 +64,6 @@
       "static/chunks/main-app.js",
       "static/css/app/exams/examPy1/page.css",
       "static/chunks/app/exams/examPy1/page.js"
-    ],
-    "/agreements/agreement-pagePy2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/agreements/agreement-pagePy2/page.css",
-      "static/chunks/app/agreements/agreement-pagePy2/page.js"
-    ],
-    "/proctors/proctor-authPy2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/proctors/proctor-authPy2/page.css",
-      "static/chunks/app/proctors/proctor-authPy2/page.js"
-    ],
-    "/exam-requirement/exam-requirementsPy2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exam-requirement/exam-requirementsPy2/page.css",
-      "static/chunks/app/exam-requirement/exam-requirementsPy2/page.js"
-    ],
-    "/exam-infos/exam-infoPy2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exam-infos/exam-infoPy2/page.css",
-      "static/chunks/app/exam-infos/exam-infoPy2/page.js"
-    ],
-    "/exams/examPy2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exams/examPy2/page.css",
-      "static/chunks/app/exams/examPy2/page.js"
-    ],
-    "/exam-infos/exam-info2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exam-infos/exam-info2/page.css",
-      "static/chunks/app/exam-infos/exam-info2/page.js"
-    ],
-    "/exams/exam2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/exams/exam2/page.css",
-      "static/chunks/app/exams/exam2/page.js"
     ]
   }
 }

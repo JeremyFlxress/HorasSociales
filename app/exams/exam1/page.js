@@ -47,6 +47,7 @@ export default function ExamPage() {
   };
 
   const handleAnswer = (questionId, answer) => {
+    const normalizedAnswer = String(answer).toUpperCase().trim();
     setAnswers(prev => ({
       ...prev,
       [questionId]: answer

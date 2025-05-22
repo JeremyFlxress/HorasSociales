@@ -7,7 +7,7 @@ for (let key ___ person) {
   console.log(key + ": " + person[key]);
 }`,
     type: "fill-blank",
-    answer: "in",
+    answer: "in" && "In",
     points: 25,
     explanation: "The for...in loop is used to iterate over the enumerable properties of an object."
   },
@@ -504,7 +504,7 @@ console.log(b);`,
 
 export const examConfig = {
   totalPoints: 1000, // 40 questions × 25 points each
-  passingScore: 700,
+  passingScore: 800,
   timeLimit: 3600, // 1 hour in seconds
-  allowedAttempts: 3
+  allowedAttempts: null
 };

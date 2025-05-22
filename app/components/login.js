@@ -30,6 +30,10 @@ const Login = () => {
     }
   };
 
+    const handleSkip = () => {
+      router.push("../exam-selection");
+  };
+
   return (
     <div className="login-page">
       <header className="login-header">
@@ -64,6 +68,10 @@ const Login = () => {
 
         <button className="login-button" onClick={handleLogin}>
           Login
+        </button>
+        <br></br>
+        <button className="login-button" onClick={handleSkip}>
+          Skip login process
         </button>
 
         {error && <p className="error-message">{error}</p>}

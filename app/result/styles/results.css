@@ -21,6 +21,7 @@
     padding: 1.5rem 0;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
   
   .results-header h1 {
@@ -40,7 +41,8 @@
     max-width: 36rem;
     margin-left: auto;
     margin-right: auto;
-    border-left: 8px solid #d1d5db; /* Gris por defecto */
+    border-left: 8px solid #d1d5db;
+    color: black; /* Gris por defecto */
   }
   
   .result-card.passed {
