@@ -37,7 +37,8 @@ for (let key ___ person) {
     type: "fill-blank",
     answer: "event",
     points: 25,
-    explanation: "The preventDefault() method is called on the event object to stop the form from submitting."
+    explanation: "The preventDefault() method is called on the event object to stop the form from submitting.",
+    tutorialLink: "https://www.w3schools.com/jsref/event_preventdefault.asp"
   },
   {
     id: 4,
@@ -51,7 +52,8 @@ for (let key ___ person) {
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The classList.add() method adds a CSS class to an element without overwriting existing classes."
+    explanation: "The classList.add() method adds a CSS class to an element without overwriting existing classes.",
+    tutorialLink: "https://www.w3schools.com/jsref/prop_element_classlist.asp"
   },
   {
     id: 5,
@@ -61,7 +63,8 @@ console.log(fruits.___);`,
     type: "fill-blank",
     answer: "length",
     points: 25,
-    explanation: "The length property returns the number of elements in an array."
+    explanation: "The length property returns the number of elements in an array.",
+    tutorialLink: "https://www.w3schools.com/js/js_arrays.asp"
   },
   {
     id: 6,
@@ -75,7 +78,8 @@ console.log(fruits.___);`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The typeof operator returns a string indicating the type of the operand."
+    explanation: "The typeof operator returns a string indicating the type of the operand.",
+    tutorialLink: "https://www.w3schools.com/js/js_typeof.asp"
   },
   {
     id: 7,
@@ -86,7 +90,8 @@ console.log(fruits.___);`,
     type: "fill-blank",
     answer: "=",
     points: 25,
-    explanation: "Default parameters are set using the assignment operator (=) in the function parameter list."
+    explanation: "Default parameters are set using the assignment operator (=) in the function parameter list.",
+    tutorialLink: "https://www.w3schools.com/js/js_function_parameters.asp"
   },
   {
     id: 8,
@@ -100,7 +105,8 @@ console.log(fruits.___);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "Using typeof prevents errors if the variable hasn't been declared, making option B the safest approach."
+    explanation: "Using typeof prevents errors if the variable hasn't been declared, making option B the safest approach.",
+    tutorialLink: "https://www.w3schools.com/js/js_undefined.asp"
   },
   {
     id: 9,
@@ -110,7 +116,8 @@ const person = JSON._____(jsonStr);`,
     type: "fill-blank",
     answer: "parse",
     points: 25,
-    explanation: "The JSON.parse() method parses a JSON string and returns a JavaScript object."
+    explanation: "The JSON.parse() method parses a JSON string and returns a JavaScript object.",
+    tutorialLink: "https://www.w3schools.com/js/js_json_parse.asp"
   },
   {
     id: 10,
@@ -124,7 +131,8 @@ const person = JSON._____(jsonStr);`,
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "Both formats work: a string in ISO format (\"2023-01-01\") or parameters (year, month, day) where months are zero-indexed (0 is January)."
+    explanation: "Both formats work: a string in ISO format (\"2023-01-01\") or parameters (year, month, day) where months are zero-indexed (0 is January).",
+    tutorialLink: "https://www.w3schools.com/js/js_dates.asp"
   },
   {
     id: 11,
@@ -133,7 +141,8 @@ const person = JSON._____(jsonStr);`,
     type: "fill-blank",
     answer: "display",
     points: 25,
-    explanation: "Setting the display property to \"none\" hides an element in the DOM."
+    explanation: "Setting the display property to \"none\" hides an element in the DOM.",
+    tutorialLink: "https://www.w3schools.com/js/js_htmldom_css.asp"
   },
   {
     id: 12,
@@ -147,7 +156,8 @@ const person = JSON._____(jsonStr);`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "JavaScript uses /* and */ for multiline comments."
+    explanation: "JavaScript uses /* and */ for multiline comments.",
+    tutorialLink: "https://www.w3schools.com/js/js_comments.asp"
   },
   {
     id: 13,
@@ -158,7 +168,8 @@ const person = JSON._____(jsonStr);`,
     type: "fill-blank",
     answer: "floor",
     points: 25,
-    explanation: "Math.floor() rounds down to the nearest integer. Math.random() * 10 gives a number from 0 to 9.999..., then adding 1 gives a number from 1 to 10.999..., which is floored to 1-10."
+    explanation: "Math.floor() rounds down to the nearest integer. Math.random() * 10 gives a number from 0 to 9.999..., then adding 1 gives a number from 1 to 10.999..., which is floored to 1-10.",
+    tutorialLink: "https://www.w3schools.com/js/js_random.asp"
   },
   {
     id: 14,
@@ -175,7 +186,8 @@ console.log(x == y);`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The == operator performs type conversion, so a number 10 is considered equal to the string \"10\"."
+    explanation: "The == operator performs type conversion, so a number 10 is considered equal to the string \"10\".",
+    tutorialLink: "https://www.w3schools.com/js/js_comparisons.asp"
   },
   {
     id: 15,
@@ -186,7 +198,8 @@ console.log(x == y);`,
     type: "fill-blank",
     answer: "setInterval",
     points: 25,
-    explanation: "The setInterval() method calls a function repeatedly at specified intervals (in milliseconds)."
+    explanation: "The setInterval() method calls a function repeatedly at specified intervals (in milliseconds).",
+    tutorialLink: "https://www.w3schools.com/js/js_timing.asp"
   },
   {
     id: 16,
@@ -200,7 +213,8 @@ console.log(x == y);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The onkeyup event is triggered when a user releases a key after typing in an input field."
+    explanation: "The onkeyup event is triggered when a user releases a key after typing in an input field.",
+    tutorialLink: "https://www.w3schools.com/js/js_events.asp"
   },
   {
     id: 17,
@@ -210,7 +224,8 @@ const newStr = str._____(\"o\", \"x\");`,
     type: "fill-blank",
     answer: "replaceAll",
     points: 25,
-    explanation: "The replaceAll() method replaces all occurrences of a specified substring with another substring."
+    explanation: "The replaceAll() method replaces all occurrences of a specified substring with another substring.",
+    tutorialLink: "https://www.w3schools.com/js/js_string_methods.asp"
   },
   {
     id: 18,
@@ -224,7 +239,8 @@ const newStr = str._____(\"o\", \"x\");`,
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "Both Array.isArray() and the instanceof operator can determine if a variable is an array."
+    explanation: "Both Array.isArray() and the instanceof operator can determine if a variable is an array.",
+    tutorialLink: "https://www.w3schools.com/js/js_arrays.asp"
   },
   {
     id: 19,
@@ -235,7 +251,8 @@ const combined = array1._____(array2);`,
     type: "fill-blank",
     answer: "concat",
     points: 25,
-    explanation: "The concat() method is used to merge two or more arrays and returns a new array."
+    explanation: "The concat() method is used to merge two or more arrays and returns a new array.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 20,
@@ -249,7 +266,8 @@ const combined = array1._____(array2);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The setTimeout() function executes a specified function once after a specified delay (in milliseconds)."
+    explanation: "The setTimeout() function executes a specified function once after a specified delay (in milliseconds).",
+    tutorialLink: "https://www.w3schools.com/js/js_timing.asp"
   },
   {
     id: 21,
@@ -262,7 +280,8 @@ const combined = array1._____(array2);`,
     type: "fill-blank",
     answer: "event",
     points: 25,
-    explanation: "The event.target property returns the element that triggered the event."
+    explanation: "The event.target property returns the element that triggered the event.",
+    tutorialLink: "https://www.w3schools.com/jsref/event_target.asp"
   },
   {
     id: 22,
@@ -276,7 +295,8 @@ const combined = array1._____(array2);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "localStorage stores data with no expiration date that persists even after the browser is closed and reopened."
+    explanation: "localStorage stores data with no expiration date that persists even after the browser is closed and reopened.",
+    tutorialLink: "https://www.w3schools.com/js/js_storage.asp"
   },
   {
     id: 23,
@@ -286,7 +306,8 @@ const containsJS = message._____(\"JavaScript\");`,
     type: "fill-blank",
     answer: "includes",
     points: 25,
-    explanation: "The includes() method determines whether a string contains the specified substring."
+    explanation: "The includes() method determines whether a string contains the specified substring.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_includes.asp"
   },
   {
     id: 24,
@@ -300,7 +321,8 @@ const containsJS = message._____(\"JavaScript\");`,
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "The forEach() method executes a provided function once for each array element."
+    explanation: "The forEach() method executes a provided function once for each array element.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_forEach.asp"
   },
   {
     id: 25,
@@ -309,7 +331,8 @@ const containsJS = message._____(\"JavaScript\");`,
     type: "fill-blank",
     answer: "getFullYear",
     points: 25,
-    explanation: "The getFullYear() method returns the year of the specified date according to local time."
+    explanation: "The getFullYear() method returns the year of the specified date according to local time.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_getfullyear.asp"
   },
   {
     id: 26,
@@ -326,7 +349,8 @@ console.log(arr.length);`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Setting an array element with an index beyond the current length extends the array. The length becomes index + 1, which is 11."
+    explanation: "Setting an array element with an index beyond the current length extends the array. The length becomes index + 1, which is 11.",
+    tutorialLink: "https://www.w3schools.com/js/js_arrays.asp"
   },
   {
     id: 27,
@@ -336,7 +360,8 @@ const namesArray = names.___(\",\");`,
     type: "fill-blank",
     answer: "split",
     points: 25,
-    explanation: "The split() method divides a string into an array of substrings using a specified separator."
+    explanation: "The split() method divides a string into an array of substrings using a specified separator.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_split.asp"
   },
   {
     id: 28,
@@ -350,7 +375,8 @@ const namesArray = names.___(\",\");`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
+    explanation: "The filter() method creates a new array with all elements that pass the test implemented by the provided function.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_filter.asp"
   },
   {
     id: 29,
@@ -361,7 +387,8 @@ const namesArray = names.___(\",\");`,
     type: "fill-blank",
     answer: "toUpperCase",
     points: 25,
-    explanation: "The toUpperCase() method converts a string to uppercase letters."
+    explanation: "The toUpperCase() method converts a string to uppercase letters.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_touppercase.asp"
   },
   {
     id: 30,
@@ -375,7 +402,8 @@ const namesArray = names.___(\",\");`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The new Date() constructor creates a Date object representing the current date and time."
+    explanation: "The new Date() constructor creates a Date object representing the current date and time.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_date.asp"
   },
   {
     id: 31,
@@ -385,7 +413,8 @@ const allPositive = numbers._____(num => num > 0);`,
     type: "fill-blank",
     answer: "every",
     points: 25,
-    explanation: "The every() method tests whether all elements in the array pass the test implemented by the provided function."
+    explanation: "The every() method tests whether all elements in the array pass the test implemented by the provided function.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_every.asp"
   },
   {
     id: 32,
@@ -399,7 +428,8 @@ const allPositive = numbers._____(num => num > 0);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The optional chaining operator (?.) allows reading the value of a property located deep within a chain of connected objects without having to validate each reference in the chain."
+    explanation: "The optional chaining operator (?.) allows reading the value of a property located deep within a chain of connected objects without having to validate each reference in the chain.",
+    tutorialLink: "https://www.w3schools.com/js/js_objects.asp"
   },
   {
     id: 33,
@@ -409,7 +439,8 @@ const copy = [...___];`,
     type: "fill-blank",
     answer: "original",
     points: 25,
-    explanation: "The spread operator (...) can be used to create a shallow copy of an array."
+    explanation: "The spread operator (...) can be used to create a shallow copy of an array.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 34,
@@ -423,7 +454,8 @@ const copy = [...___];`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The sort() method sorts the elements of an array in place and returns the sorted array."
+    explanation: "The sort() method sorts the elements of an array in place and returns the sorted array.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_sort.asp"
   },
   {
     id: 35,
@@ -433,7 +465,8 @@ const trimmedUsername = username.___();`,
     type: "fill-blank",
     answer: "trim",
     points: 25,
-    explanation: "The trim() method removes whitespace from both ends of a string."
+    explanation: "The trim() method removes whitespace from both ends of a string.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_trim.asp"
   },
   {
     id: 36,
@@ -447,7 +480,8 @@ const trimmedUsername = username.___();`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The isNaN() function determines whether a value is NaN (Not-a-Number)."
+    explanation: "The isNaN() function determines whether a value is NaN (Not-a-Number).",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_isnan.asp"
   },
   {
     id: 37,
@@ -457,7 +491,8 @@ const max = Math.___(...numbers);`,
     type: "fill-blank",
     answer: "max",
     points: 25,
-    explanation: "The Math.max() function returns the largest of the provided numbers."
+    explanation: "The Math.max() function returns the largest of the provided numbers.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_max.asp"
   },
   {
     id: 38,
@@ -475,7 +510,8 @@ console.log(b);`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "Primitive values like numbers are copied by value, not by reference. Changing a doesn't affect b."
+    explanation: "Primitive values like numbers are copied by value, not by reference. Changing a doesn't affect b.",
+    tutorialLink: "https://www.w3schools.com/js/js_operators.asp"
   },
   {
     id: 39,
@@ -486,7 +522,8 @@ console.log(b);`,
     type: "fill-blank",
     answer: "then",
     points: 25,
-    explanation: "The then() method is used to handle the fulfillment of a Promise returned by an async function."
+    explanation: "The then() method is used to handle the fulfillment of a Promise returned by an async function.",
+    tutorialLink: "https://www.w3schools.com/js/js_async.asp"
   },
   {
     id: 40,
@@ -500,13 +537,14 @@ console.log(b);`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The slice() method extracts a section of a string and returns it as a new string."
+    explanation: "The slice() method extracts a section of a string and returns it as a new string.",
+    tutorialLink: "https://www.w3schools.com/jsref/jsref_slice_string.asp"
   }
 ];
 
 export const examConfig = {
   totalPoints: 1000, // 40 questions × 25 points each
   passingScore: 800,
-  timeLimit: 3600, // 1 hour in seconds
-  allowedAttempts: null
+  timeLimit: 2400, // 1 hour in seconds
+  allowedAttempts: Infinity
 };

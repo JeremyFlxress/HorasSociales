@@ -40,10 +40,15 @@ export default function ResultsPage() {
 
   // Calcular estadísticas
   const answeredCount = Object.keys(answers).length;
-  const unansweredCount = questions.length - answeredCount;
-  const correctCount = Object.keys(answers).filter(id => 
-    answers[id] === questions.find(q => q.id === parseInt(id))?.answer
-  ).length;
+  const unansweredCount = questions.length - answeredCount;  const correctCount = Object.keys(answers).filter(id => {
+    const question = questions.find(q => q.id === parseInt(id));
+    if (!question) return false;
+    if (question.type === "fill-blank") {
+      return typeof answers[id] === "string" && 
+             answers[id].toLowerCase().trim() === question.answer.toLowerCase().trim();
+    }
+    return answers[id] === question.answer;
+  }).length;
   const incorrectCount = answeredCount - correctCount;
 
   return (
@@ -121,7 +126,13 @@ export default function ResultsPage() {
         <div className="questions-review">
           <h2>Revisión de preguntas</h2>
           {questions.map((q, i) => {
-            const isCorrect = answers[q.id] === q.answer;
+            let isCorrect;
+          if (q.type === "fill-blank") {
+            isCorrect = typeof answers[q.id] === "string" && 
+                       answers[q.id].toLowerCase().trim() === q.answer.toLowerCase().trim();
+          } else {
+            isCorrect = answers[q.id] === q.answer;
+          }
             return (
               <div key={q.id} className={`question-card ${isCorrect ? 'correct' : 'incorrect'}`}>
                 <h3>Pregunta {i+1}</h3>

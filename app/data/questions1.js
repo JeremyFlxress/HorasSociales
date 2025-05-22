@@ -562,6 +562,6 @@ const [first, second, ...___] = numbers;`,
 export const examConfig = {
   totalPoints: 1000, // 40 questions × 25 points each
   passingScore: 800,
-  timeLimit: 3600, // 1 hour in seconds
-  allowedAttempts: 3
+  timeLimit: 2400, // 1 hour in seconds
+  allowedAttempts: Infinity // No limit on attempts
 };

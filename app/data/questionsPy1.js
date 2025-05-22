@@ -38,7 +38,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Python uses the hash symbol (#) for single-line comments. Multi-line comments use triple quotes (''' or \"\"\")."
+    explanation: "Python uses the hash symbol (#) for single-line comments. Multi-line comments use triple quotes (''' or \"\"\").",
+    tutorialLink: "https://www.w3schools.com/python/python_comments.asp"
   },
   {
     id: 4,
@@ -47,7 +48,8 @@ export const questions = [
     type: "fill-blank",
     answer: "print",
     points: 25,
-    explanation: "The print() function is used to display output to the console in Python."
+    explanation: "The print() function is used to display output to the console in Python.",
+    tutorialLink: "https://www.w3schools.com/python/ref_func_print.asp"
   },
   {
     id: 5,
@@ -61,7 +63,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The len() function is used to get the number of items in a list, string, or other sequence types in Python."
+    explanation: "The len() function is used to get the number of items in a list, string, or other sequence types in Python.",
+    tutorialLink: "https://www.w3schools.com/python/ref_func_len.asp"
   },
   {
     id: 6,
@@ -78,7 +81,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The code first assigns 5 to x, then prints the value of x (which is 5), and finally increments x by 1. But the incremented value is not printed."
+    explanation: "The code first assigns 5 to x, then prints the value of x (which is 5), and finally increments x by 1. But the incremented value is not printed.",
+    tutorialLink: "https://www.w3schools.com/python/python_operators.asp"
   },
   {
     id: 7,
@@ -92,7 +96,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "In Python, functions are defined using the 'def' keyword followed by the function name, parameters in parentheses, and a colon."
+    explanation: "In Python, functions are defined using the 'def' keyword followed by the function name, parameters in parentheses, and a colon.",
+    tutorialLink: "https://www.w3schools.com/python/python_functions.asp"
   },
   {
     id: 8,
@@ -106,7 +111,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Dictionaries in Python store data as key-value pairs and are defined using curly braces {}."
+    explanation: "Dictionaries in Python store data as key-value pairs and are defined using curly braces {}.",
+    tutorialLink: "https://www.w3schools.com/python/python_dictionaries.asp"
   },
   {
     id: 9,
@@ -116,7 +122,8 @@ x += 1`,
     type: "fill-blank",
     answer: "open",
     points: 25,
-    explanation: "The open() function is used to open files in Python. The 'r' parameter specifies read mode."
+    explanation: "The open() function is used to open files in Python. The 'r' parameter specifies read mode.",
+    tutorialLink: "https://www.w3schools.com/python/python_file_open.asp"
   },
   {
     id: 10,
@@ -130,7 +137,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The import statement is used to import modules in Python. You can import the entire module or specific functions."
+    explanation: "The import statement is used to import modules in Python. You can import the entire module or specific functions.",
+    tutorialLink: "https://www.w3schools.com/python/python_modules.asp"
   },
   {
     id: 11,
@@ -144,7 +152,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Lists in Python are created using square brackets [] with elements separated by commas."
+    explanation: "Lists in Python are created using square brackets [] with elements separated by commas.",
+    tutorialLink: "https://www.w3schools.com/python/python_lists.asp"
   },
   {
     id: 12,
@@ -158,7 +167,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The add() method is used to add an element to a set in Python. Unlike lists, sets don't have append() or insert() methods."
+    explanation: "The add() method is used to add an element to a set in Python. Unlike lists, sets don't have append() or insert() methods.",
+    tutorialLink: "https://www.w3schools.com/python/python_sets.asp"
   },
   {
     id: 13,
@@ -167,7 +177,8 @@ x += 1`,
     type: "fill-blank",
     answer: "for",
     points: 25,
-    explanation: "In a list comprehension, the 'for' keyword is used to specify the iteration part."
+    explanation: "In a list comprehension, the 'for' keyword is used to specify the iteration part.",
+    tutorialLink: "https://www.w3schools.com/python/python_lists_comprehension.asp"
   },
   {
     id: 14,
@@ -181,7 +192,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "In Python, the ** operator is used for exponentiation. For example, 2**3 equals 8."
+    explanation: "In Python, the ** operator is used for exponentiation. For example, 2**3 equals 8.",
+    tutorialLink: "https://www.w3schools.com/python/python_operators.asp"
   },
   {
     id: 15,
@@ -195,7 +207,8 @@ x += 1`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The 'is' operator checks if two variables refer to the same object in memory. For value comparison, use the '==' operator."
+    explanation: "The 'is' operator checks if two variables refer to the same object in memory. For value comparison, use the '==' operator.",
+    tutorialLink: "https://www.w3schools.com/python/python_operators.asp"
   },
   {
     id: 16,
@@ -209,7 +222,8 @@ else:
     type: "fill-blank",
     answer: "elif",
     points: 25,
-    explanation: "In Python, 'elif' is short for 'else if' and is used for multiple conditional statements."
+    explanation: "In Python, 'elif' is short for 'else if' and is used for multiple conditional statements.",
+    tutorialLink: "https://www.w3schools.com/python/python_conditions.asp"
   },
   {
     id: 17,
@@ -223,7 +237,8 @@ else:
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The 're' module provides support for regular expressions in Python."
+    explanation: "The 're' module provides support for regular expressions in Python.",
+    tutorialLink: "https://www.w3schools.com/python/python_regex.asp"
   },
   {
     id: 18,
@@ -237,7 +252,8 @@ else:
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The round() function rounds a number to the nearest integer. int() truncates the decimal part."
+    explanation: "The round() function rounds a number to the nearest integer. int() truncates the decimal part.",
+    tutorialLink: "https://www.w3schools.com/python/ref_func_round.asp"
   },
   {
     id: 19,
@@ -247,7 +263,8 @@ greeting = f\"Hello, ___\"`,
     type: "fill-blank",
     answer: "{name}",
     points: 25,
-    explanation: "F-strings use {variable} syntax to embed expressions inside string literals."
+    explanation: "F-strings use {variable} syntax to embed expressions inside string literals.",
+    tutorialLink: "https://www.w3schools.com/python/python_string_formatting.asp"
   },
   {
     id: 20,
@@ -261,7 +278,8 @@ greeting = f\"Hello, ___\"`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The pop() method removes and returns the last element from a list by default, or a specified index."
+    explanation: "The pop() method removes and returns the last element from a list by default, or a specified index.",
+    tutorialLink: "https://www.w3schools.com/python/ref_list_pop.asp"
   },
   {
     id: 21,
@@ -275,7 +293,8 @@ greeting = f\"Hello, ___\"`,
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "You can create an empty dictionary using either the dict() constructor or empty curly braces {}."
+    explanation: "You can create an empty dictionary using either the dict() constructor or empty curly braces {}.",
+    tutorialLink: "https://www.w3schools.com/python/python_dictionaries.asp"
   },
   {
     id: 22,
@@ -284,7 +303,8 @@ greeting = f\"Hello, ___\"`,
     type: "fill-blank",
     answer: "int",
     points: 25,
-    explanation: "The int() function converts a string or number to an integer."
+    explanation: "The int() function converts a string or number to an integer.",
+    tutorialLink: "https://www.w3schools.com/python/python_numbers.asp"
   },
   {
     id: 23,
@@ -298,7 +318,8 @@ greeting = f\"Hello, ___\"`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "In Python class methods, 'self' refers to the instance of the class that the method is called on."
+    explanation: "In Python class methods, 'self' refers to the instance of the class that the method is called on.",
+    tutorialLink: "https://www.w3schools.com/python/python_classes.asp"
   },
   {
     id: 24,
@@ -312,7 +333,8 @@ greeting = f\"Hello, ___\"`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The built-in 'json' module provides functions for working with JSON data, such as json.dumps() and json.loads()."
+    explanation: "The built-in 'json' module provides functions for working with JSON data, such as json.dumps() and json.loads().",
+    tutorialLink: "https://www.w3schools.com/python/python_json.asp"
   },
   {
     id: 25,
@@ -324,7 +346,8 @@ ___ FileNotFoundError:
     type: "fill-blank",
     answer: "except",
     points: 25,
-    explanation: "The except clause catches and handles exceptions raised in the try block."
+    explanation: "The except clause catches and handles exceptions raised in the try block.",
+    tutorialLink: "https://www.w3schools.com/python/python_try_except.asp"
   },
   {
     id: 26,
@@ -338,7 +361,8 @@ ___ FileNotFoundError:
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "In Python, type([]) returns <class 'list'>, indicating that [] is an instance of the list class."
+    explanation: "In Python, type([]) returns <class 'list'>, indicating that [] is an instance of the list class.",
+    tutorialLink: "https://www.w3schools.com/python/ref_func_type.asp"
   },
   {
     id: 27,
@@ -352,7 +376,8 @@ ___ FileNotFoundError:
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The pop(index) method removes and returns the item at the specified index. If no index is specified, it removes the last item."
+    explanation: "The pop(index) method removes and returns the item at the specified index. If no index is specified, it removes the last item.",
+    tutorialLink: "https://www.w3schools.com/python/ref_list_pop.asp"
   },
   {
     id: 28,
@@ -362,7 +387,8 @@ ___ FileNotFoundError:
     type: "fill-blank",
     answer: "in",
     points: 25,
-    explanation: "The 'in' keyword is used in for loops to iterate over sequences, including dictionary items."
+    explanation: "The 'in' keyword is used in for loops to iterate over sequences, including dictionary items.",
+    tutorialLink: "https://www.w3schools.com/python/python_dictionaries_loop.asp"
   },
   {
     id: 29,
@@ -376,7 +402,8 @@ ___ FileNotFoundError:
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "Both dict[\"key\"] and dict.get(\"key\") access values, but get() is safer as it returns None (or a default value) if the key doesn't exist."
+    explanation: "Both dict[\"key\"] and dict.get(\"key\") access values, but get() is safer as it returns None (or a default value) if the key doesn't exist.",
+    tutorialLink: "https://www.w3schools.com/python/ref_dictionary_get.asp"
   },
   {
     id: 30,
@@ -390,7 +417,8 @@ ___ FileNotFoundError:
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The sleep() function from the time module pauses execution for the specified number of seconds."
+    explanation: "The sleep() function from the time module pauses execution for the specified number of seconds.",
+    tutorialLink: "https://www.w3schools.com/python/python_datetime.asp"
   },
   {
     id: 31,
@@ -400,7 +428,8 @@ even_indices = my_list[___]`,
     type: "fill-blank",
     answer: "::2",
     points: 25,
-    explanation: "The slice notation ::2 selects every second element, starting from index 0 (i.e., elements with even indices)."
+    explanation: "The slice notation ::2 selects every second element, starting from index 0 (i.e., elements with even indices).",
+    tutorialLink: "https://www.w3schools.com/python/python_lists_slicing.asp"
   },
   {
     id: 32,
@@ -414,7 +443,8 @@ even_indices = my_list[___]`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The join() method is called on a string separator and takes an iterable as an argument, joining its elements with the separator."
+    explanation: "The join() method is called on a string separator and takes an iterable as an argument, joining its elements with the separator.",
+    tutorialLink: "https://www.w3schools.com/python/ref_string_join.asp"
   },
   {
     id: 33,
@@ -428,7 +458,8 @@ even_indices = my_list[___]`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "Python supports unpacking sequences directly into variables using syntax like a, b, c = [1, 2, 3]."
+    explanation: "Python supports unpacking sequences directly into variables using syntax like a, b, c = [1, 2, 3].",
+    tutorialLink: "https://www.w3schools.com/python/python_tuples_unpack.asp"
   },
   {
     id: 34,
@@ -440,7 +471,8 @@ even_indices = my_list[___]`,
     type: "fill-blank",
     answer: "__init__",
     points: 25,
-    explanation: "The __init__ method is the constructor in Python classes, called when an instance is created."
+    explanation: "The __init__ method is the constructor in Python classes, called when an instance is created.",
+    tutorialLink: "https://www.w3schools.com/python/python_classes.asp"
   },
   {
     id: 35,
@@ -454,7 +486,8 @@ even_indices = my_list[___]`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Python doesn't have a direct find() method. You can use next() with filter() or a list comprehension with a condition."
+    explanation: "Python doesn't have a direct find() method. You can use next() with filter() or a list comprehension with a condition.",
+    tutorialLink: "https://www.w3schools.com/python/ref_func_filter.asp"
   },
   {
     id: 36,
@@ -468,7 +501,8 @@ even_indices = my_list[___]`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "In Python, you cannot add a string and an integer directly. This raises a TypeError. You would need to convert types first."
+    explanation: "In Python, you cannot add a string and an integer directly. This raises a TypeError. You would need to convert types first.",
+    tutorialLink: "https://www.w3schools.com/python/python_casting.asp"
   },
   {
     id: 37,
@@ -477,7 +511,8 @@ even_indices = my_list[___]`,
     type: "fill-blank",
     answer: "rest",
     points: 25,
-    explanation: "The asterisk (*) syntax collects the remaining elements of a sequence. Any variable name can be used, but 'rest' is common."
+    explanation: "The asterisk (*) syntax collects the remaining elements of a sequence. Any variable name can be used, but 'rest' is common.",
+    tutorialLink: "https://www.w3schools.com/python/python_arrays.asp"
   },
   {
     id: 38,
@@ -491,7 +526,8 @@ even_indices = my_list[___]`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Lambda functions are small anonymous functions defined with the lambda keyword, typically used for simple operations."
+    explanation: "Lambda functions are small anonymous functions defined with the lambda keyword, typically used for simple operations.",
+    tutorialLink: "https://www.w3schools.com/python/python_lambda.asp"
   },
   {
     id: 39,
@@ -500,7 +536,8 @@ even_indices = my_list[___]`,
     type: "fill-blank",
     answer: "lambda",
     points: 25,
-    explanation: "Lambda functions are defined using the 'lambda' keyword, followed by parameters, a colon, and the expression."
+    explanation: "Lambda functions are defined using the 'lambda' keyword, followed by parameters, a colon, and the expression.",
+    tutorialLink: "https://www.w3schools.com/python/python_lambda.asp"
   },
   {
     id: 40,
@@ -514,13 +551,14 @@ even_indices = my_list[___]`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The map() function applies a given function to each item in an iterable and returns an iterator of results."
+    explanation: "The map() function applies a given function to each item in an iterable and returns an iterator of results.",
+    tutorialLink: "https://www.w3schools.com/python/ref_func_map.asp"
   }
 ];
 
 export const examConfig = {
   totalPoints: 1000, // 40 questions × 25 points each
   passingScore: 800,
-  timeLimit: 3600, // 1 hour in seconds
-  allowedAttempts: 3
+  timeLimit: 2400, // 1 hour in seconds
+  allowedAttempts: Infinity
 };
