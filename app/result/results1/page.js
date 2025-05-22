@@ -119,94 +119,93 @@ export default function ResultsPage() {
         </div>
 
         <div className="questions-review">
-          <h2>Revisión detallada</h2>
-          
+          <h2>Revisión de preguntas</h2>
           {questions.map((q, i) => {
             const isCorrect = answers[q.id] === q.answer;
-            const answered = q.id in answers;
-            
             return (
-              <div key={q.id} className={`question-card ${
-                !answered ? 'unanswered' : isCorrect ? 'correct' : 'incorrect'
-              }`}>
-                <div className="question-header">
-                  <h3>
-                    <span className="question-indicator">
-                      {!answered ? '?' : isCorrect ? '✓' : '✗'}
-                    </span>
-                    Pregunta {i+1}
-                  </h3>
+              <div key={q.id} className={`question-card ${isCorrect ? 'correct' : 'incorrect'}`}>
+                <h3>Pregunta {i+1}</h3>
+                <div className="status-badge">
+                  {isCorrect ? '✓ Correcto' : '✗ Incorrecto'}
                 </div>
-                
-                <div className="question-body">
+                <div className="question-content">
                   <p className="question-text">{q.text}</p>
-                  
                   {q.code && (
                     <pre className="code-block">
                       <code>{q.code}</code>
                     </pre>
                   )}
-                  
-                  {q.options && (
-                    <div className="options-list">
-                      {q.options.map((option, optIndex) => (
-                        <div 
-                          key={optIndex} 
-                          className={`option-item ${
-                            answers[q.id] === option[0] && !isCorrect ? 'selected-wrong' : 
-                            (option[0] === q.answer) ? 'correct-answer' : 
-                            answers[q.id] === option[0] ? 'selected' : ''
-                          }`}
-                        >
-                          {option}
-                          {option[0] === q.answer && <span className="check-mark">✓</span>}
-                          {answers[q.id] === option[0] && !isCorrect && <span className="x-mark">✗</span>}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  
-                  <div className="answer-details">
-                    {!answered ? (
-                      <p className="no-answer">Sin responder</p>
-                    ) : (
+                  <div className="answer-section">
+                    <p><strong>Tu respuesta:</strong> {answers[q.id] || 'No respondida'}</p>
+                    {!isCorrect && (
                       <>
-                        <p className="user-answer">
-                          <span className="answer-label">Tu respuesta: </span>
-                          <span className={isCorrect ? 'correct-text' : 'incorrect-text'}>
-                            {answers[q.id]}
-                          </span>
-                        </p>
-                        
-                        {!isCorrect && (
-                          <p className="correct-answer-text">
-                            <span className="answer-label">Respuesta correcta: </span>
-                            <span className="correct-text">{q.answer}</span>
-                          </p>
+                        <p><strong>Respuesta correcta:</strong> {q.answer}</p>
+                        <p className="explanation"><strong>Explicación:</strong> {q.explanation}</p>
+                        {q.tutorialLink && (
+                          <a 
+                            href={q.tutorialLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="tutorial-button"
+                          >
+                            📚 Estudiar este tema en W3Schools
+                          </a>
                         )}
                       </>
                     )}
-                    
-                    <div className="explanation-box">
-                      <span className="explanation-label">Explicación: </span>
-                      {q.explanation}
-                    </div>
                   </div>
                 </div>
               </div>
             );
           })}
         </div>
-        
-        <div className="action-buttons">
-          <button 
-            onClick={() => router.push('../../exams/exam1')}
-            className="retry-button"
-          >
-            Volver a intentar
-          </button>
-        </div>
       </div>
+
+      <style jsx>{`
+        .question-card {
+          background: white;
+          border-radius: 8px;
+          padding: 1.5rem;
+          margin: 1rem 0;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          border-left: 4px solid;
+        }
+        .question-card.correct {
+          border-left-color: #28a745;
+        }
+        .question-card.incorrect {
+          border-left-color: #dc3545;
+        }
+        .tutorial-button {
+          display: inline-block;
+          background-color: #e7f1ff;
+          color: #0066cc;
+          padding: 0.75rem 1.5rem;
+          border-radius: 4px;
+          text-decoration: none;
+          margin-top: 1rem;
+          transition: all 0.2s ease;
+        }
+        .tutorial-button:hover {
+          background-color: #cce5ff;
+          transform: translateY(-1px);
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .code-block {
+          background: #f8f9fa;
+          padding: 1rem;
+          border-radius: 4px;
+          margin: 1rem 0;
+          overflow-x: auto;
+        }
+        .explanation {
+          margin: 1rem 0;
+          padding: 1rem;
+          background: #f8f9fa;
+          border-radius: 4px;
+          border-left: 3px solid #6c757d;
+        }
+      `}</style>
     </div>
   );
 }

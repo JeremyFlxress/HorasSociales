@@ -9,7 +9,8 @@ for (let key ___ person) {
     type: "fill-blank",
     answer: "in" && "In",
     points: 25,
-    explanation: "The for...in loop is used to iterate over the enumerable properties of an object."
+    explanation: "The for...in loop is used to iterate over the enumerable properties of an object.",
+    tutorialLink: "https://www.w3schools.com/js/js_loop_forin.asp"
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ for (let key ___ person) {
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "In JavaScript, 2 + \"2\" becomes \"22\" (string concatenation), then \"22\" - 1 converts the string to a number and subtracts 1, resulting in 21."
+    explanation: "In JavaScript, 2 + \"2\" becomes \"22\" (string concatenation), then \"22\" - 1 converts the string to a number and subtracts 1, resulting in 21.",
+    tutorialLink: "https://www.w3schools.com/js/js_type_conversion.asp"
   },
   {
     id: 3,

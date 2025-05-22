@@ -11,7 +11,8 @@ export const questions = [
     type: "fill-blank",
     answer: "max_value",
     points: 25,
-    explanation: "The function compares each number with the current max_value and updates it if a larger value is found."
+    explanation: "The function compares each number with the current max_value and updates it if a larger value is found.",
+    tutorialLink: "https://www.w3schools.com/python/python_functions.asp"
   },
   {
     id: 2,
@@ -25,7 +26,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The remove() method removes the first occurrence of the specified item from a list."
+    explanation: "The remove() method removes the first occurrence of the specified item from a list.",
+    tutorialLink: "https://www.w3schools.com/python/python_lists_methods.asp"
   },
   {
     id: 3,
@@ -191,7 +193,7 @@ ___ i < 5:
   },
   {
     id: 15,
-    text: "How do you check if a string starts with a specific prefix?",
+    text: "Which method checks if a string starts with a specified prefix?",
     options: [
       "A) string.beginsWith(prefix)",
       "B) string.hasPrefix(prefix)",

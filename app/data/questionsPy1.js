@@ -8,7 +8,8 @@ export const questions = [
     type: "fill-blank",
     answer: "-1",
     points: 25,
-    explanation: "In Python's range() function, the third parameter specifies the step value. Using -1 makes it count down by 1."
+    explanation: "In Python's range() function, the third parameter specifies the step value. Using -1 makes it count down by 1.",
+    tutorialLink: "https://www.w3schools.com/python/python_for_loops.asp"
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The append() method is used to add an item to the end of a list in Python."
+    explanation: "The append() method is used to add an item to the end of a list in Python.",
+    tutorialLink: "https://www.w3schools.com/python/python_lists.asp"
   },
   {
     id: 3,

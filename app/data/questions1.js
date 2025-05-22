@@ -10,7 +10,8 @@ export const questions = [
     type: "fill-blank",
     answer: "--",
     points: 25,
-    explanation: "The loop needs to decrement the counter using the -- operator."
+    explanation: "The loop needs to decrement the counter using the -- operator.",
+    tutorialLink: "https://www.w3schools.com/js/js_loop_for.asp"
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "Option D correctly appends each room with a line break."
+    explanation: "Option D correctly appends each room with a line break.",
+    tutorialLink: "https://www.w3schools.com/js/js_htmldom_html.asp"
   },
   {
     id: 3,
@@ -38,7 +40,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "// is used for single line comments, while /* */ is used for multi-line comments."
+    explanation: "// is used for single line comments, while /* */ is used for multi-line comments.",
+    tutorialLink: "https://www.w3schools.com/js/js_comments.asp"
   },
   {
     id: 4,
@@ -47,7 +50,8 @@ export const questions = [
     type: "fill-blank",
     answer: "alert",
     points: 25,
-    explanation: "The alert() function is used to display a dialog box with a message and an OK button."
+    explanation: "The alert() function is used to display a dialog box with a message and an OK button.",
+    tutorialLink: "https://www.w3schools.com/js/js_popup.asp"
   },
   {
     id: 5,
@@ -61,7 +65,8 @@ export const questions = [
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "push() adds elements to the end of an array, while pop() removes from the end, shift() removes from the beginning, and unshift() adds to the beginning."
+    explanation: "push() adds elements to the end of an array, while pop() removes from the end, shift() removes from the beginning, and unshift() adds to the beginning.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 6,
@@ -77,7 +82,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The post-increment operator (x++) returns the original value before incrementing. So it prints 5, then x becomes 6."
+    explanation: "The post-increment operator (x++) returns the original value before incrementing. So it prints 5, then x becomes 6.",
+    tutorialLink: "https://www.w3schools.com/js/js_operators.asp"
   },
   {
     id: 7,
@@ -91,7 +97,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The correct syntax to create a function in JavaScript is using the 'function' keyword followed by the function name and parentheses."
+    explanation: "The correct syntax to create a function in JavaScript is using the 'function' keyword followed by the function name and parentheses.",
+    tutorialLink: "https://www.w3schools.com/js/js_functions.asp"
   },
   {
     id: 8,
@@ -105,7 +112,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The onclick event occurs when a user clicks on an HTML element."
+    explanation: "The onclick event occurs when a user clicks on an HTML element.",
+    tutorialLink: "https://www.w3schools.com/js/js_events.asp"
   },
   {
     id: 9,
@@ -114,7 +122,8 @@ console.log(x++);`,
     type: "fill-blank",
     answer: "getElementById",
     points: 25,
-    explanation: "The getElementById() method returns the element with the specified ID."
+    explanation: "The getElementById() method returns the element with the specified ID.",
+    tutorialLink: "https://www.w3schools.com/js/js_htmldom_document.asp"
   },
   {
     id: 10,
@@ -128,7 +137,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The correct attribute to specify the URL of an external JavaScript file is 'src'."
+    explanation: "The correct attribute to specify the URL of an external JavaScript file is 'src'.",
+    tutorialLink: "https://www.w3schools.com/js/js_whereto.asp"
   },
   {
     id: 11,
@@ -142,7 +152,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "The alert() function is used to display a message box with a specified message and an OK button."
+    explanation: "The alert() function is used to display a message box with a specified message and an OK button.",
+    tutorialLink: "https://www.w3schools.com/js/js_popup.asp"
   },
   {
     id: 12,
@@ -156,7 +167,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "Arrays in JavaScript are defined with square brackets [], with elements separated by commas."
+    explanation: "Arrays in JavaScript are defined with square brackets [], with elements separated by commas.",
+    tutorialLink: "https://www.w3schools.com/js/js_arrays.asp"
   },
   {
     id: 13,
@@ -167,7 +179,8 @@ console.log(x++);`,
     type: "fill-blank",
     answer: "addEventListener",
     points: 25,
-    explanation: "The addEventListener() method attaches an event handler to the specified element."
+    explanation: "The addEventListener() method attaches an event handler to the specified element.",
+    tutorialLink: "https://www.w3schools.com/js/js_htmldom_eventlistener.asp"
   },
   {
     id: 14,
@@ -181,7 +194,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The equal sign (=) is the assignment operator. == is the equality operator that compares values."
+    explanation: "The equal sign (=) is the assignment operator. == is the equality operator that compares values.",
+    tutorialLink: "https://www.w3schools.com/js/js_operators.asp"
   },
   {
     id: 15,
@@ -195,7 +209,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The != operator checks if values are not equal. !== checks if values are not equal or not of the same type."
+    explanation: "The != operator checks if values are not equal. !== checks if values are not equal or not of the same type.",
+    tutorialLink: "https://www.w3schools.com/js/js_operators.asp"
   },
   {
     id: 16,
@@ -208,7 +223,8 @@ console.log(x++);`,
     type: "fill-blank",
     answer: "else",
     points: 25,
-    explanation: "The else statement specifies a block of code to be executed if the condition in the if statement is false."
+    explanation: "The else statement specifies a block of code to be executed if the condition in the if statement is false.",
+    tutorialLink: "https://www.w3schools.com/js/js_if_else.asp"
   },
   {
     id: 17,
@@ -222,7 +238,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "querySelector() returns the first element that matches a specified CSS selector."
+    explanation: "querySelector() returns the first element that matches a specified CSS selector.",
+    tutorialLink: "https://www.w3schools.com/js/js_htmldom_elements.asp"
   },
   {
     id: 18,
@@ -236,7 +253,8 @@ console.log(x++);`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "Math.round() returns the nearest integer to a given number."
+    explanation: "Math.round() returns the nearest integer to a given number.",
+    tutorialLink: "https://www.w3schools.com/js/js_math.asp"
   },
   {
     id: 19,
@@ -246,7 +264,8 @@ let greeting = \`Hello, ___\`;`,
     type: "fill-blank",
     answer: "${name}",
     points: 25,
-    explanation: "Template literals use ${expression} to embed expressions within the string."
+    explanation: "Template literals use ${expression} to embed expressions within the string.",
+    tutorialLink: "https://www.w3schools.com/js/js_string_templates.asp"
   },
   {
     id: 20,
@@ -260,7 +279,8 @@ let greeting = \`Hello, ___\`;`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The pop() method removes the last element from an array and returns that element."
+    explanation: "The pop() method removes the last element from an array and returns that element.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 21,
@@ -274,7 +294,8 @@ let greeting = \`Hello, ___\`;`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "Objects in JavaScript can be created using object literals, which are defined with curly braces {}."
+    explanation: "Objects in JavaScript can be created using object literals, which are defined with curly braces {}.",
+    tutorialLink: "https://www.w3schools.com/js/js_objects.asp"
   },
   {
     id: 22,
@@ -283,7 +304,8 @@ let greeting = \`Hello, ___\`;`,
     type: "fill-blank",
     answer: "parseInt",
     points: 25,
-    explanation: "The parseInt() function parses a string and returns an integer. Another valid answer could be Number."
+    explanation: "The parseInt() function parses a string and returns an integer. Another valid answer could be Number.",
+    tutorialLink: "https://www.w3schools.com/js/js_type_conversion.asp"
   },
   {
     id: 23,
@@ -297,7 +319,8 @@ let greeting = \`Hello, ___\`;`,
     type: "multiple-choice",
     answer: "D",
     points: 25,
-    explanation: "The value of 'this' depends on how a function is called. It can refer to different objects depending on the context."
+    explanation: "The value of 'this' depends on how a function is called. It can refer to different objects depending on the context.",
+    tutorialLink: "https://www.w3schools.com/js/js_this.asp"
   },
   {
     id: 24,
@@ -311,7 +334,8 @@ let greeting = \`Hello, ___\`;`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "JSON.stringify() converts a JavaScript object into a JSON string."
+    explanation: "JSON.stringify() converts a JavaScript object into a JSON string.",
+    tutorialLink: "https://www.w3schools.com/js/js_json_stringify.asp"
   },
   {
     id: 25,
@@ -324,7 +348,8 @@ let greeting = \`Hello, ___\`;`,
     type: "fill-blank",
     answer: "catch",
     points: 25,
-    explanation: "The catch statement lets you handle the error if an exception is thrown in the try block."
+    explanation: "The catch statement lets you handle the error if an exception is thrown in the try block.",
+    tutorialLink: "https://www.w3schools.com/js/js_errors.asp"
   },
   {
     id: 26,
@@ -338,7 +363,8 @@ let greeting = \`Hello, ___\`;`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "In JavaScript, arrays are a type of object, so typeof [] returns \"object\"."
+    explanation: "In JavaScript, arrays are a type of object, so typeof [] returns \"object\".",
+    tutorialLink: "https://www.w3schools.com/js/js_datatypes.asp"
   },
   {
     id: 27,
@@ -352,7 +378,8 @@ let greeting = \`Hello, ___\`;`,
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The shift() method removes the first element from an array and returns that element."
+    explanation: "The shift() method removes the first element from an array and returns that element.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 28,
@@ -364,7 +391,8 @@ for (___ fruit of fruits) {
     type: "fill-blank",
     answer: "let",
     points: 25,
-    explanation: "The for...of loop needs a variable declaration with let, const, or var to store each array element during iteration."
+    explanation: "The for...of loop needs a variable declaration with let, const, or var to store each array element during iteration.",
+    tutorialLink: "https://www.w3schools.com/js/js_loop_forof.asp"
   },
   {
     id: 29,
@@ -378,7 +406,8 @@ for (___ fruit of fruits) {
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "In JavaScript, object properties can be accessed using dot notation (object.property) or bracket notation (object[\"property\"])."
+    explanation: "In JavaScript, object properties can be accessed using dot notation (object.property) or bracket notation (object[\"property\"]).",
+    tutorialLink: "https://www.w3schools.com/js/js_objects.asp"
   },
   {
     id: 30,
@@ -392,7 +421,8 @@ for (___ fruit of fruits) {
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "setTimeout() executes a function once after a specified delay. setInterval() repeatedly executes a function."
+    explanation: "setTimeout() executes a function once after a specified delay. setInterval() repeatedly executes a function.",
+    tutorialLink: "https://www.w3schools.com/js/js_timing.asp"
   },
   {
     id: 31,
@@ -401,7 +431,8 @@ for (___ fruit of fruits) {
     type: "fill-blank",
     answer: "querySelectorAll",
     points: 25,
-    explanation: "querySelectorAll() returns all elements that match the specified CSS selector."
+    explanation: "querySelectorAll() returns all elements that match the specified CSS selector.",
+    tutorialLink: "https://www.w3schools.com/js/js_htmldom_elements.asp"
   },
   {
     id: 32,
@@ -415,7 +446,8 @@ for (___ fruit of fruits) {
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The join() method joins all elements of an array into a string and returns this string."
+    explanation: "The join() method joins all elements of an array into a string and returns this string.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 33,
@@ -429,7 +461,8 @@ for (___ fruit of fruits) {
     type: "multiple-choice",
     answer: "A",
     points: 25,
-    explanation: "The spread syntax (...) allows an iterable to be expanded in places where zero or more arguments or elements are expected."
+    explanation: "The spread syntax (...) allows an iterable to be expanded in places where zero or more arguments or elements are expected.",
+    tutorialLink: "https://www.w3schools.com/js/js_es6.asp"
   },
   {
     id: 34,
@@ -440,7 +473,8 @@ for (___ fruit of fruits) {
     type: "fill-blank",
     answer: "Promise",
     points: 25,
-    explanation: "A Promise object represents a value that may not be available yet but will be resolved at some point in the future."
+    explanation: "A Promise object represents a value that may not be available yet but will be resolved at some point in the future.",
+    tutorialLink: "https://www.w3schools.com/js/js_promise.asp"
   },
   {
     id: 35,
@@ -454,7 +488,8 @@ for (___ fruit of fruits) {
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The find() method returns the first element in an array that passes a test function."
+    explanation: "The find() method returns the first element in an array that passes a test function.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   },
   {
     id: 36,
@@ -468,7 +503,8 @@ for (___ fruit of fruits) {
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "When a number is added to a string, JavaScript converts the number to a string and performs string concatenation, resulting in \"105\"."
+    explanation: "When a number is added to a string, JavaScript converts the number to a string and performs string concatenation, resulting in \"105\".",
+    tutorialLink: "https://www.w3schools.com/js/js_type_conversion.asp"
   },
   {
     id: 37,
@@ -478,7 +514,8 @@ const [first, second, ...___] = numbers;`,
     type: "fill-blank",
     answer: "rest",
     points: 25,
-    explanation: "The rest parameter syntax (...) collects the remaining elements of an array. Any variable name can be used, but 'rest' is common."
+    explanation: "The rest parameter syntax (...) collects the remaining elements of an array. Any variable name can be used, but 'rest' is common.",
+    tutorialLink: "https://www.w3schools.com/js/js_es6.asp"
   },
   {
     id: 38,
@@ -492,7 +529,8 @@ const [first, second, ...___] = numbers;`,
     type: "multiple-choice",
     answer: "C",
     points: 25,
-    explanation: "The const keyword declares a block-scoped variable that cannot be reassigned after declaration."
+    explanation: "The const keyword declares a block-scoped variable that cannot be reassigned after declaration.",
+    tutorialLink: "https://www.w3schools.com/js/js_es6.asp"
   },
   {
     id: 39,
@@ -501,7 +539,8 @@ const [first, second, ...___] = numbers;`,
     type: "fill-blank",
     answer: "=>",
     points: 25,
-    explanation: "The arrow function syntax uses => to separate the parameter list from the function body."
+    explanation: "The arrow function syntax uses => to separate the parameter list from the function body.",
+    tutorialLink: "https://www.w3schools.com/js/js_arrow_function.asp"
   },
   {
     id: 40,
@@ -515,7 +554,8 @@ const [first, second, ...___] = numbers;`,
     type: "multiple-choice",
     answer: "B",
     points: 25,
-    explanation: "The map() method creates a new array with the results of calling a function on every element in the original array."
+    explanation: "The map() method creates a new array with the results of calling a function on every element in the original array.",
+    tutorialLink: "https://www.w3schools.com/js/js_array_methods.asp"
   }
 ];
 
