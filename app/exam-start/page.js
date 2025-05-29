@@ -1,7 +1,7 @@
 "use client";
 
-import ExamPage from "../exam/page";
+import ExamStart from "../components/exam/ExamStart";
 
-export default function ExamSetupPage() {
-  return <ExamPage />;
+export default function ExamStartPage() {
+  return <ExamStart />;
 }

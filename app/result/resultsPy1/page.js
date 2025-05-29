@@ -31,7 +31,13 @@ function ResultsPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   
-  // Verificar si searchParams está disponible
+  // Todos los hooks deben estar en el nivel superior
+  useEffect(() => {
+    if (!searchParams || !searchParams.get('score') || !searchParams.get('answers')) {
+      router.push('../../exams/examPy1');
+    }
+  }, [searchParams, router]);
+
   if (!searchParams) {
     return <LoadingScreen />;
   }
@@ -40,15 +46,13 @@ function ResultsPageContent() {
   const scoreParam = searchParams.get('score');
   const answersParam = searchParams.get('answers');
 
-  // Redirigir si faltan parámetros
-  useEffect(() => {
-    if (!scoreParam || !answersParam) {
-      router.push('../../exams/examPy1');
-    }
-  }, [scoreParam, answersParam, router]);
-
   if (!scoreParam || !answersParam) {
-    return <LoadingScreen text="Redirigiendo..." />;
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p className="loading-text">Redirigiendo...</p>
+      </div>
+    );
   }
 
   // Procesar resultados
@@ -121,15 +125,6 @@ function ResultsPageContent() {
           <h2>Resumen de respuestas</h2>
           
           <div className="stats-grid">
-            <div className="stat-card answered">
-              <div className="stat-number">{answeredCount}</div>
-              <span className="stat-label">Preguntas respondidas</span>
-            </div>
-            
-            <div className="stat-card unanswered">
-              <div className="stat-number">{unansweredCount}</div>
-              <span className="stat-label">Preguntas sin responder</span>
-            </div>
             
             <div className="stat-card correct">
               <div className="stat-number">{correctCount}</div>

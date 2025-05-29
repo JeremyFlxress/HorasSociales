@@ -4,24 +4,48 @@
 export const dynamic = 'force-dynamic';
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { questions, examConfig } from '../../data/questions2';
 import '../styles/results.css'; // Importamos los estilos CSS
 
-export default function ResultsPage() {
+// Componente principal envuelto en Suspense
+export default function ResultsPageWrapper() {
+  return (
+    <Suspense fallback={<LoadingScreen />}>
+      <ResultsPageContent />
+    </Suspense>
+  );
+}
+
+// Componente de pantalla de carga
+function LoadingScreen() {
+  return (
+    <div className="loading-container">
+      <div className="spinner"></div>
+      <p className="loading-text">Cargando resultados...</p>
+    </div>
+  );
+}
+
+// Componente de contenido principal
+function ResultsPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+
+  // Todos los hooks deben estar en el nivel superior
+  useEffect(() => {
+    if (!searchParams || !searchParams.get('score') || !searchParams.get('answers')) {
+      router.push('../../exams/exam2');
+    }
+  }, [searchParams, router]);
   
+  if (!searchParams) {
+    return <LoadingScreen />;
+  }
+
   // Obtener parámetros
   const scoreParam = searchParams.get('score');
   const answersParam = searchParams.get('answers');
-
-  // Redirigir si faltan parámetros
-  useEffect(() => {
-    if (!scoreParam || !answersParam) {
-      router.push('../../exams/exam2');
-    }
-  }, [scoreParam, answersParam, router]);
 
   if (!scoreParam || !answersParam) {
     return (
@@ -101,15 +125,6 @@ export default function ResultsPage() {
           <h2>Resumen de respuestas</h2>
           
           <div className="stats-grid">
-            <div className="stat-card answered">
-              <div className="stat-number">{answeredCount}</div>
-              <span className="stat-label">Preguntas respondidas</span>
-            </div>
-            
-            <div className="stat-card unanswered">
-              <div className="stat-number">{unansweredCount}</div>
-              <span className="stat-label">Preguntas sin responder</span>
-            </div>
             
             <div className="stat-card correct">
               <div className="stat-number">{correctCount}</div>

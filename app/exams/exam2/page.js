@@ -73,9 +73,9 @@ export default function ExamPage() {
       
       // Dos métodos alternativos para asegurar la navegación
       try {
-        router.push(`../result/results2?${params.toString()}`);
+        router.push(`../../result/results2?${params.toString()}`);
       } catch (e) {
-        window.location.href = `../result/results2?${params.toString()}`;
+        window.location.href = `../../result/results2?${params.toString()}`;
       }
     } catch (error) {
       console.error('Error al finalizar el examen:', error);
