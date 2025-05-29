@@ -1,17 +1,41 @@
 'use client';
 
-// Esto desactiva completamente el prerenderizado estático
 export const dynamic = 'force-dynamic';
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { questions, examConfig } from '../../data/questionsPy1';
-import '../styles/results.css'; // Importamos los estilos CSS
+import '../styles/results.css';
 
-export default function ResultsPage() {
+// Componente principal envuelto en Suspense
+export default function ResultsPageWrapper() {
+  return (
+    <Suspense fallback={<LoadingScreen />}>
+      <ResultsPageContent />
+    </Suspense>
+  );
+}
+
+// Pantalla de carga reutilizable
+function LoadingScreen() {
+  return (
+    <div className="loading-container">
+      <div className="spinner"></div>
+      <p className="loading-text">Cargando resultados...</p>
+    </div>
+  );
+}
+
+// Componente de contenido principal
+function ResultsPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   
+  // Verificar si searchParams está disponible
+  if (!searchParams) {
+    return <LoadingScreen />;
+  }
+
   // Obtener parámetros
   const scoreParam = searchParams.get('score');
   const answersParam = searchParams.get('answers');
@@ -24,12 +48,7 @@ export default function ResultsPage() {
   }, [scoreParam, answersParam, router]);
 
   if (!scoreParam || !answersParam) {
-    return (
-      <div className="loading-container">
-        <div className="spinner"></div>
-        <p className="loading-text">Redirigiendo...</p>
-      </div>
-    );
+    return <LoadingScreen text="Redirigiendo..." />;
   }
 
   // Procesar resultados
@@ -40,7 +59,8 @@ export default function ResultsPage() {
 
   // Calcular estadísticas
   const answeredCount = Object.keys(answers).length;
-  const unansweredCount = questions.length - answeredCount;  const correctCount = Object.keys(answers).filter(id => {
+  const unansweredCount = questions.length - answeredCount;
+  const correctCount = Object.keys(answers).filter(id => {
     const question = questions.find(q => q.id === parseInt(id));
     if (!question) return false;
     if (question.type === "fill-blank") {
@@ -127,12 +147,12 @@ export default function ResultsPage() {
           <h2>Revisión de preguntas</h2>
           {questions.map((q, i) => {
             let isCorrect;
-          if (q.type === "fill-blank") {
-            isCorrect = typeof answers[q.id] === "string" && 
-                       answers[q.id].toLowerCase().trim() === q.answer.toLowerCase().trim();
-          } else {
-            isCorrect = answers[q.id] === q.answer;
-          }
+            if (q.type === "fill-blank") {
+              isCorrect = typeof answers[q.id] === "string" && 
+                         answers[q.id].toLowerCase().trim() === q.answer.toLowerCase().trim();
+            } else {
+              isCorrect = answers[q.id] === q.answer;
+            }
             return (
               <div key={q.id} className={`question-card ${isCorrect ? 'correct' : 'incorrect'}`}>
                 <h3>Pregunta {i+1}</h3>
