@@ -1,7 +1,7 @@
 {
-  "/exams/examPy2/page": "app/exams/examPy2/page.js",
-  "/result/resultsPy2/page": "app/result/resultsPy2/page.js",
-  "/exams/exam1/page": "app/exams/exam1/page.js",
-  "/result/results1/page": "app/result/results1/page.js",
-  "/exams/exam2/page": "app/exams/exam2/page.js"
+  "/exam-selection/page": "app/exam-selection/page.js",
+  "/proctors/proctor-authPy1/page": "app/proctors/proctor-authPy1/page.js",
+  "/exam-requirement/exam-requirementsPy1/page": "app/exam-requirement/exam-requirementsPy1/page.js",
+  "/exam-infos/exam-infoPy1/page": "app/exam-infos/exam-infoPy1/page.js",
+  "/exams/examPy1/page": "app/exams/examPy1/page.js"
 }
