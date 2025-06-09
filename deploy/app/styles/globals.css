@@ -1,0 +1,478 @@
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #166088;
+  --accent-color: #4fc3f7;
+  --success-color: #4CAF50;
+  --error-color: #f44336;
+  --warning-color: #ff9800;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #757575;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.home-page .hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.exam-info {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.exam-info ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.exam-info li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.exam-info li::before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+.start-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Exam page styles */
+.exam-page {
+  padding-bottom: 3rem;
+}
+
+.timer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Results page styles */
+.results-container {
+  padding: 2rem;
+}
+
+.score-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.score-display {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.passed {
+  color: var(--success-color);
+}
+
+.failed {
+  color: var(--error-color);
+}
+
+.result-status {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.detailed-results {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.question-review {
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 5px solid;
+}
+
+.question-review.correct {
+  border-color: var(--success-color);
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+.question-review.incorrect {
+  border-color: var(--error-color);
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.points {
+  font-weight: bold;
+}
+
+.correct .points {
+  color: var(--success-color);
+}
+
+.incorrect .points {
+  color: var(--error-color);
+}
+
+.code-block {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.answer-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--medium-gray);
+}
+
+.user-answer, .correct-answer {
+  margin-bottom: 0.5rem;
+}
+
+.explanation {
+  font-style: italic;
+  color: var(--dark-gray);
+  margin-top: 0.5rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    margin: 0.5rem 0;
+    display: block;
+  }
+  
+  .exam-info {
+    padding: 1rem;
+  }
+}
+
+.results-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.score-summary {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.passed {
+  color: green;
+  font-weight: bold;
+}
+
+.failed {
+  color: red;
+  font-weight: bold;
+}
+
+.questions-review {
+  margin-top: 30px;
+}
+
+.question {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.correct {
+  background-color: #e8f5e9;
+  border-left: 4px solid green;
+}
+
+.incorrect {
+  background-color: #ffebee;
+  border-left: 4px solid red;
+}
+
+.answer-info {
+  margin-top: 10px;
+}
+
+.explanation {
+  font-style: italic;
+  color: #555;
+}
+
+pre {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+/* Resultados */
+.results-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.result-summary {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.result-summary.passed {
+  background-color: #e8f5e9;
+  border: 2px solid #4CAF50;
+}
+
+.result-summary.failed {
+  background-color: #ffebee;
+  border: 2px solid #f44336;
+}
+
+.verdict {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.question-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.question-card.correct {
+  background-color: #f6fff6;
+  border-left: 4px solid #4CAF50;
+}
+
+.question-card.incorrect {
+  background-color: #fff5f5;
+  border-left: 4px solid #f44336;
+}
+
+.question-text {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.question-code {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.answer-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.explanation {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  color: #f44336;
+}
+
+/* globals.css - Estilos globales para la aplicación */
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9fafb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  line-height: 1.2;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Contenedor principal para dar espacio a los laterales */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Utilidades básicas */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}

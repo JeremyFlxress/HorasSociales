@@ -1,0 +1,70 @@
+.examInfoPage {
+    display: flex;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f5f7fa;
+}
+
+.infoPanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.examDetails {
+    margin-bottom: 2rem;
+}
+
+.examTitle {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.startExamButton {
+    padding: 1rem 2rem;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.startExamButton:hover {
+    background-color: #3182ce;
+}
+
+.imagePanel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.examImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .examInfoPage {
+        flex-direction: column;
+    }
+    
+    .imagePanel {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
