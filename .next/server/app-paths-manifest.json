@@ -1,8 +1,9 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/agreements/agreement-page1/page": "app/agreements/agreement-page1/page.js",
   "/exams/exam1/page": "app/exams/exam1/page.js",
+  "/proctors/proctor-auth1/page": "app/proctors/proctor-auth1/page.js",
   "/result/results1/page": "app/result/results1/page.js",
-  "/result/results2/page": "app/result/results2/page.js",
   "/exam-requirement/exam-requirements1/page": "app/exam-requirement/exam-requirements1/page.js",
-  "/proctors/proctor-auth1/page": "app/proctors/proctor-auth1/page.js"
+  "/exam-selection/page": "app/exam-selection/page.js",
+  "/exam-infos/exam-info1/page": "app/exam-infos/exam-info1/page.js"
 }

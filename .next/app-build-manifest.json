@@ -47,11 +47,23 @@
       "static/css/app/exam-infos/exam-info1/page.css",
       "static/chunks/app/exam-infos/exam-info1/page.js"
     ],
+    "/exams/exam1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exams/exam1/page.css",
+      "static/chunks/app/exams/exam1/page.js"
+    ],
     "/agreements/agreement-page2/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/agreements/agreement-page2/page.css",
       "static/chunks/app/agreements/agreement-page2/page.js"
+    ],
+    "/proctors/proctor-auth2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/proctors/proctor-auth2/page.css",
+      "static/chunks/app/proctors/proctor-auth2/page.js"
     ],
     "/agreements/agreement-pagePy2/page": [
       "static/chunks/webpack.js",
@@ -59,11 +71,53 @@
       "static/css/app/agreements/agreement-pagePy2/page.css",
       "static/chunks/app/agreements/agreement-pagePy2/page.js"
     ],
-    "/exams/exam1/page": [
+    "/proctors/proctor-authPy2/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/exams/exam1/page.css",
-      "static/chunks/app/exams/exam1/page.js"
+      "static/css/app/proctors/proctor-authPy2/page.css",
+      "static/chunks/app/proctors/proctor-authPy2/page.js"
+    ],
+    "/exam-requirement/exam-requirementsPy2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exam-requirement/exam-requirementsPy2/page.css",
+      "static/chunks/app/exam-requirement/exam-requirementsPy2/page.js"
+    ],
+    "/exam-infos/exam-infoPy2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exam-infos/exam-infoPy2/page.css",
+      "static/chunks/app/exam-infos/exam-infoPy2/page.js"
+    ],
+    "/exams/examPy2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exams/examPy2/page.css",
+      "static/chunks/app/exams/examPy2/page.js"
+    ],
+    "/agreements/agreement-pagePy1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/agreements/agreement-pagePy1/page.css",
+      "static/chunks/app/agreements/agreement-pagePy1/page.js"
+    ],
+    "/proctors/proctor-authPy1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/proctors/proctor-authPy1/page.css",
+      "static/chunks/app/proctors/proctor-authPy1/page.js"
+    ],
+    "/exam-requirement/exam-requirementsPy1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exam-requirement/exam-requirementsPy1/page.css",
+      "static/chunks/app/exam-requirement/exam-requirementsPy1/page.js"
+    ],
+    "/exam-infos/exam-infoPy1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/exam-infos/exam-infoPy1/page.css",
+      "static/chunks/app/exam-infos/exam-infoPy1/page.js"
     ],
     "/exams/exam2/page": [
       "static/chunks/webpack.js",
@@ -83,16 +137,23 @@
       "static/css/app/result/results1/page.css",
       "static/chunks/app/result/results1/page.js"
     ],
-    "/result/results2/page": [
+    "/exam-requirement/exam-requirements2/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/result/results2/page.css",
-      "static/chunks/app/result/results2/page.js"
+      "static/css/app/exam-requirement/exam-requirements2/page.css",
+      "static/chunks/app/exam-requirement/exam-requirements2/page.js"
     ],
-    "/_not-found/page": [
+    "/exam-infos/exam-info2/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/exam-infos/exam-info2/page.css",
+      "static/chunks/app/exam-infos/exam-info2/page.js"
+    ],
+    "/result/resultsPy1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/result/resultsPy1/page.css",
+      "static/chunks/app/result/resultsPy1/page.js"
     ]
   }
 }

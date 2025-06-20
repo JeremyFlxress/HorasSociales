@@ -40,7 +40,8 @@ export default function ResultsPage() {
 
   // Calcular estadísticas
   const answeredCount = Object.keys(answers).length;
-  const unansweredCount = questions.length - answeredCount;  const correctCount = Object.keys(answers).filter(id => {
+  const unansweredCount = questions.length - answeredCount;  
+  const correctCount = Object.keys(answers).filter(id => {
     const question = questions.find(q => q.id === parseInt(id));
     if (!question) return false;
     if (question.type === "fill-blank") {

@@ -15,12 +15,12 @@ const ProctorAuth = () => {
     };
 
     const handlePrevious = () => {
-        router.push("../../agreements/agreement-page1"); 
+        router.push("../../agreements/agreement-page2"); 
     };
 
     const handleNext = () => {
         if (username === validProctor.username && password === validProctor.password) {
-            router.push("../exam-requirement/exam-requirements1"); 
+            router.push("../exam-requirement/exam-requirements2"); 
         } else {
             setError("Invalid proctor username or password"); 
         }

@@ -99,17 +99,30 @@ export default function ResultsPage() {
 
         <div className="questions-summary">
           <h2>Resumen de respuestas</h2>
+          
           <div className="stats-grid">
+            <div className="stat-card answered">
+              <div className="stat-number">{answeredCount}</div>
+              <span className="stat-label">Preguntas respondidas</span>
+            </div>
+            
+            <div className="stat-card unanswered">
+              <div className="stat-number">{unansweredCount}</div>
+              <span className="stat-label">Preguntas sin responder</span>
+            </div>
+            
             <div className="stat-card correct">
               <div className="stat-number">{correctCount}</div>
               <span className="stat-label">Respuestas correctas</span>
             </div>
+            
             <div className="stat-card incorrect">
               <div className="stat-number">{incorrectCount}</div>
               <span className="stat-label">Respuestas incorrectas</span>
             </div>
           </div>
         </div>
+
         <div className="questions-review">
           <h2>Revisión de preguntas</h2>
           {questions.map((q, i) => {
@@ -157,84 +170,16 @@ export default function ResultsPage() {
             );
           })}
         </div>
+        
+        <div className="action-buttons">
+          <button 
+            onClick={() => router.push('../../exams/exam2')}
+            className="retry-button"
+          >
+            Volver a intentar
+          </button>
+        </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}>
-        <button
-          className="nav-button submit-button finalizar-btn"
-          onClick={() => router.push('/exam-selection')}
-        >
-          Finalizar intento
-        </button>
-      </div>
-      <style jsx>{`
-        .question-card {
-          background: white;
-          border-radius: 8px;
-          padding: 1.5rem;
-          margin: 1rem 0;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          border-left: 4px solid;
-        }
-        .question-card.correct {
-          border-left-color: #28a745;
-        }
-        .question-card.incorrect {
-          border-left-color: #dc3545;
-        }
-        .tutorial-button {
-          display: inline-block;
-          background-color: #e7f1ff;
-          color: #0066cc;
-          padding: 0.75rem 1.5rem;
-          border-radius: 4px;
-          text-decoration: none;
-          margin-top: 1rem;
-          transition: all 0.2s ease;
-        }
-        .tutorial-button:hover {
-          background-color: #cce5ff;
-          transform: translateY(-1px);
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .code-block {
-          background: #f8f9fa;
-          padding: 1rem;
-          border-radius: 4px;
-          margin: 1rem 0;
-          overflow-x: auto;
-        }
-        .explanation {
-          margin: 1rem 0;
-          padding: 1rem;
-          background: #f8f9fa;
-          border-radius: 4px;
-          border-left: 3px solid #6c757d;
-        }
-        .finalizar-btn {
-          background: linear-gradient(90deg, #4a26ab 0%, #00b4d8 100%);
-          color: #fff;
-          border: none;
-          border-radius: 12px;
-          padding: 1rem 2.5rem;
-          font-size: 1.15rem;
-          font-weight: 700;
-          box-shadow: 0 4px 16px rgba(74,38,171,0.10);
-          cursor: pointer;
-          transition: background 0.2s, transform 0.15s;
-          margin-bottom: 2.5rem;
-          letter-spacing: 0.5px;
-          display: flex;
-          align-items: center;
-        }
-        .finalizar-btn:hover {
-          background: linear-gradient(90deg, #6c3ce4 0%, #0096c7 100%);
-          transform: translateY(-2px) scale(1.03);
-          box-shadow: 0 6px 24px rgba(74,38,171,0.16);
-        }
-        body, .results-page, .container, .result-card, .score-details, .score-value, .score-min, .questions-summary, .stat-card, .questions-review, .question-card, .status-badge, .question-content, .answer-section, .explanation, .tutorial-button, .code-block, .finalizar-btn, .retry-button {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        }
-      `}</style>
     </div>
   );
 }
