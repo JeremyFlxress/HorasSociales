@@ -30,7 +30,8 @@ body {
   padding: 0 20px;
 }
 
-.header {
+/* Asegura que el header global no afecte headers específicos */
+.header:not(.results-header):not(.exam-selection-header):not(.agreement-page .header):not(.exam-requirements-page .header) {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem 0;
@@ -475,4 +476,12 @@ button {
 
 .p-4 {
   padding: 1rem;
+}
+
+.footer {
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  padding: 23px;
+  background-color: #2099d5;
 }

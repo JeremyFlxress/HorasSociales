@@ -68,12 +68,7 @@ const ProctorAuth = () => {
             </main>
 
             <footer className="footer">
-                <p>Copyright © 1996-2024 Pearson Education Inc. or its affiliates. All rights reserved.</p>
-                <div className="footer-links">
-                    <a href="/terms">Terms</a>
-                    <a href="/privacy">Privacy</a>
-                    <a href="/contact">Contact</a>
-                </div>
+                <p>Copyright © 1996-2024 Pearson Education Inc. All rights reserved.</p>
             </footer>
         </div>
     );

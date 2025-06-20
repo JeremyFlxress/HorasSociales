@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import '../../exams/styles/exam.css';
 
 export default function ExamContainer({
   question,
@@ -13,6 +14,7 @@ export default function ExamContainer({
   onFinish // Añadimos esta prop
 }) {
   const [currentSelection, setCurrentSelection] = useState(selectedAnswer || '');
+  const [showAlertModal, setShowAlertModal] = useState(false);
 
   // Sincronizar la selección cuando cambia la pregunta
   useEffect(() => {
@@ -21,7 +23,7 @@ export default function ExamContainer({
 
   const handleSubmit = () => {
     if (!currentSelection) {
-      alert('Por favor selecciona una respuesta antes de continuar');
+      setShowAlertModal(true);
       return;
     }
     // Guardar la respuesta actual
@@ -41,7 +43,7 @@ export default function ExamContainer({
 
   const handleNext = () => {
     if (!currentSelection) {
-      alert('Por favor selecciona una respuesta antes de continuar');
+      setShowAlertModal(true);
       return;
     }
     // Guardar la respuesta actual
@@ -52,6 +54,18 @@ export default function ExamContainer({
 
   return (
     <div className="question-container">
+      {/* Modal de alerta personalizado */}
+      {showAlertModal && (
+        <div className="custom-alert-modal">
+          <div className="custom-alert-content">
+            <h4>¡Atención!</h4>
+            <p>Por favor selecciona o escribe una respuesta antes de continuar.</p>
+            <button className="custom-alert-btn" onClick={() => setShowAlertModal(false)}>
+              Entendido
+            </button>
+          </div>
+        </div>
+      )}
       <h3>Pregunta {questionNumber} de {totalQuestions}</h3>
       
       <div className="question-text">{question.text}</div>
@@ -78,13 +92,16 @@ export default function ExamContainer({
       )}
 
       {question.type === 'fill-blank' && (
-        <input
-          type="text"
-          value={currentSelection || ''}
-          onChange={(e) => setCurrentSelection(e.target.value)}
-          placeholder="Escribe tu respuesta aquí"
-          className="fill-blank-input"
-        />
+        <div className="fill-blank">
+          <input
+            type="text"
+            value={currentSelection || ''}
+            onChange={(e) => setCurrentSelection(e.target.value)}
+            placeholder="Escribe tu respuesta aquí"
+            className="fill-blank-input"
+            autoComplete="off"
+          />
+        </div>
       )}
 
       <div className="navigation-buttons">

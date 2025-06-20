@@ -15,17 +15,23 @@ export const questions = [
   },
   {
     id: 2,
-    text: "Which line of code should you use at line 09?",
+    text: "Given the following code, what will be displayed in the paragraph after the loop runs?",
+    code: `let rooms = ["A", "B", "C"];
+for (let i = 0; i < rooms.length; i++) {
+  document.getElementById("para").innerHTML += rooms[i] + "<br/>";
+}
+// ...
+<p id=\"para\"></p>`,
     options: [
-      "A) document.getElementById(\"para\").innerHTML += rooms[i];",
-      "B) document.getElementById(\"para\").innerHTML = rooms[i]+ \"<br/>\";",
-      "C) document.getElementById(\"para\").innerHTML += rooms[i]+<br/>;",
-      "D) document.getElementById(\"para\").innerHTML += rooms[i]+ \"<br/>\";"
+      "A) ABC",
+      "B) A<br/>B<br/>C<br/>",
+      "C) A B C",
+      "D) [A, B, C]"
     ],
     type: "multiple-choice",
-    answer: "D",
+    answer: "B",
     points: 25,
-    explanation: "Option D correctly appends each room with a line break.",
+    explanation: "El código agrega cada elemento del array seguido de un salto de línea, por lo que el párrafo mostrará cada letra en una línea distinta.",
     tutorialLink: "https://www.w3schools.com/js/js_htmldom_html.asp"
   },
   {

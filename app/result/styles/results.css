@@ -615,3 +615,7 @@ body {
       text-align: center;
     }
   }
+
+  body, .results-page, .container, .result-card, .score-details, .score-value, .score-min, .questions-summary, .stat-card, .questions-review, .question-card, .status-badge, .question-content, .answer-section, .explanation, .tutorial-button, .code-block, .finalizar-btn, .retry-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  }

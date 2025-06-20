@@ -1,0 +1,64 @@
+/* Base Styles */
+:root {
+  --primary-color: #00b4d8;
+  --primary-light: #43e97b;
+  --accent-color: #43e97b;
+  --accent-hover: #00b4d8;
+  --success-color: #43e97b;
+  --success-hover: #00b4d8;
+  --error-color: #00b4d8;
+  --light-bg: #f3f4f6;
+  --medium-bg: #e5e7eb;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px rgba(0, 180, 216, 0.12);
+  --transition: all 0.3s ease;
+  --gradient-bg: linear-gradient(135deg, #00b4d8 0%, #43e97b 100%);
+}
+
+body {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ffffff 100%);
+}
+
+/* Cambios de color para reloj, botones y selecciones */
+.option.selected {
+  background: var(--gradient-bg);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.next-button, .submit-button {
+  background: var(--gradient-bg);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 180, 216, 0.25);
+}
+
+.next-button:hover, .submit-button:hover {
+  box-shadow: 0 6px 15px rgba(0, 180, 216, 0.35);
+}
+
+.timer {
+  background: var(--gradient-bg);
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,180,216,0.10);
+}
+
+.custom-alert-modal {
+  background: rgba(0, 180, 216, 0.18);
+}
+.custom-alert-content {
+  border: 2px solid var(--primary-color);
+}
+.custom-alert-content h4 {
+  color: var(--primary-color);
+}
+.custom-alert-btn {
+  background: var(--primary-color);
+}
+.custom-alert-btn:hover {
+  background: var(--primary-light);
+}

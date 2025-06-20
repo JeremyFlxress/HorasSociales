@@ -1,6 +1,7 @@
 'use client';
 import { useRouter } from 'next/router';
 import { questions, examConfig } from '../data/questions';
+import Header from '../components/exam/Header.jsx';
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -43,6 +44,15 @@ export default function ResultsPage() {
             </div>
           );
         })}
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}>
+        <button
+          className="nav-button submit-button"
+          onClick={() => router.push('/exam-selection')}
+          style={{ minWidth: 220 }}
+        >
+          Finalizar intento
+        </button>
       </div>
     </div>
   );

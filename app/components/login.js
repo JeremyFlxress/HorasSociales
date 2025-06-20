@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation"; // Reemplazo de useNavigate()
+import { useRouter } from "next/navigation";
 import "../styles/login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter(); // Hook de navegación en Next.js
+  const router = useRouter(); 
 
   const validCredentials = [
     { email: "estudiante1@raices.superate.org.sv", password: "Raices29" },
@@ -24,7 +24,7 @@ const Login = () => {
     );
 
     if (user) {
-      router.push("../exam-setup"); // Navegación en Next.js
+      router.push("../exam-setup"); 
     } else {
       setError("Invalid email or password");
     }
@@ -34,17 +34,21 @@ const Login = () => {
       router.push("../exam-selection");
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleLogin();
+    }
+  };
+
   return (
     <div className="login-page">
       <header className="login-header">
         <img src="/certiport.png" alt="Certiport Logo" className="logo" />
-        <h1>FUSALMO (90024618)</h1>
       </header>
 
       <div className="login-content">
         <h2>Welcome</h2>
         <p>Log in to take your exam</p>
-        <p className="required-field">* indicates a required field</p>
 
         <div className="form-group">
           <label>Username *</label>
@@ -53,6 +57,7 @@ const Login = () => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            onKeyPress={handleKeyPress}
           />
         </div>
 
@@ -63,6 +68,7 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            onKeyPress={handleKeyPress}
           />
         </div>
 
@@ -76,14 +82,11 @@ const Login = () => {
 
         {error && <p className="error-message">{error}</p>}
 
-        <p className="forgot-password">
-          Forgot your username or password? <a href="#">I Cannot Access My Account</a>
-        </p>
+        
       </div>
 
       <footer className="footer">
-        <p>Copyright © 1996-2024 Pearson Education Inc.</p>
-        <p>Terms | Privacy | Contact</p>
+        <p>Copyright © 1996-2024 Pearson Education Inc. All rights reserved.</p>
       </footer>
     </div>
   );

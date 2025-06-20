@@ -8,7 +8,7 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    overflow-x: hidden; 
 }
 
 .login-page {
@@ -63,11 +63,6 @@ body, html {
     margin-bottom: 10px;
 }
 
-.required-field {
-    color: #888;
-    font-size: 12px;
-    margin-bottom: 15px;
-}
 
 .form-group {
     width: 100%;
@@ -106,7 +101,6 @@ body, html {
     background-color: #005f6b;
 }
 
-/* Login Alternativo */
 .login-alternative {
     margin-top: 20px;
     display: flex;
@@ -119,20 +113,8 @@ body, html {
     margin-left: 10px;
 }
 
-.forgot-password {
-    margin-top: 15px;
-    font-size: 12px;
-    color: #555;
-}
 
-.forgot-password a {
-    color: #007b8c;
-    text-decoration: none;
-}
 
-.forgot-password a:hover {
-    text-decoration: underline;
-}
 
 /* Footer */
 .footer {

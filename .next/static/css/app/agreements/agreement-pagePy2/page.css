@@ -1,0 +1,186 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/agreements/styles/terminosdeuso.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.agreement-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* Asegura que el header de terminos de uso no afecte otros headers */
+.agreement-page .header {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.logo {
+    height: 50px;
+}
+
+.content {
+    flex: 1 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #00467f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.agreement-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.accept-options {
+    display: flex;
+    color: #000000;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.accept-options label {
+    font-size: 14px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.previous {
+    background-color: #00467f;
+    color: #fff;
+}
+
+.next {
+    background-color: #008cba;
+    color: #fff;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    padding: 23px;
+    background-color: #2099d5;
+}
+
+/* Asegura que el footer de terminos de uso no afecte otros footers */
+.agreement-page .footer {
+    background-color: #2099d5;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.custom-alert-box {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(32, 153, 213, 0.25);
+    padding: 32px 28px 24px 28px;
+    text-align: center;
+    max-width: 350px;
+    border: 2px solid #2099d5;
+}
+
+.custom-alert-box h2 {
+    color: #2099d5;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.custom-alert-box p {
+    color: #333;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.alert-btn {
+    background: #2099d5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.alert-btn:hover {
+    background: #166088;
+}
+

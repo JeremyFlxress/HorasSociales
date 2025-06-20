@@ -101,15 +101,6 @@ export default function ResultsPage() {
           <h2>Resumen de respuestas</h2>
           
           <div className="stats-grid">
-            <div className="stat-card answered">
-              <div className="stat-number">{answeredCount}</div>
-              <span className="stat-label">Preguntas respondidas</span>
-            </div>
-            
-            <div className="stat-card unanswered">
-              <div className="stat-number">{unansweredCount}</div>
-              <span className="stat-label">Preguntas sin responder</span>
-            </div>
             
             <div className="stat-card correct">
               <div className="stat-number">{correctCount}</div>
@@ -171,7 +162,14 @@ export default function ResultsPage() {
           })}
         </div>
       </div>
-
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}>
+        <button
+          className="nav-button submit-button finalizar-btn"
+          onClick={() => router.push('/exam-selection')}
+        >
+          <span style={{fontSize: '1.3em', marginRight: '0.5em'}}></span> Finalizar intento
+        </button>
+      </div>
       <style jsx>{`
         .question-card {
           background: white;
@@ -215,6 +213,27 @@ export default function ResultsPage() {
           background: #f8f9fa;
           border-radius: 4px;
           border-left: 3px solid #6c757d;
+        }
+        .finalizar-btn {
+          background: linear-gradient(90deg, #4a26ab 0%, #00b4d8 100%);
+          color: #fff;
+          border: none;
+          border-radius: 12px;
+          padding: 1rem 2.5rem;
+          font-size: 1.15rem;
+          font-weight: 700;
+          box-shadow: 0 4px 16px rgba(74,38,171,0.10);
+          cursor: pointer;
+          transition: background 0.2s, transform 0.15s;
+          margin-bottom: 2.5rem;
+          letter-spacing: 0.5px;
+          display: flex;
+          align-items: center;
+        }
+        .finalizar-btn:hover {
+          background: linear-gradient(90deg, #6c3ce4 0%, #0096c7 100%);
+          transform: translateY(-2px) scale(1.03);
+          box-shadow: 0 6px 24px rgba(74,38,171,0.16);
         }
       `}</style>
     </div>

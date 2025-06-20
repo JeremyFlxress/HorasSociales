@@ -5,6 +5,7 @@ import "../styles/terminosdeuso.css"; // Ruta correcta para estilos
 
 const Agreement = () => {
     const [accepted, setAccepted] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
     const router = useRouter(); // Hook de navegación en Next.js
 
     const handleAcceptChange = (event) => {
@@ -15,7 +16,7 @@ const Agreement = () => {
         if (accepted) {
             router.push("../../proctors/proctor-authPy2"); 
         } else {
-            alert("Debe aceptar los términos para continuar :).");
+            setShowAlert(true);
         }
     };
 
@@ -66,15 +67,19 @@ const Agreement = () => {
                     <button className="button previous" onClick={handlePrevious}>Previous</button>
                     <button className="button next" onClick={handleNext}>Next</button>
                 </div>
+                {showAlert && (
+                    <div className="custom-alert-overlay">
+                        <div className="custom-alert-box">
+                            <h2>¡Atención!</h2>
+                            <p>Debe aceptar los términos para continuar 🙂</p>
+                            <button className="alert-btn" onClick={() => setShowAlert(false)}>OK</button>
+                        </div>
+                    </div>
+                )}
             </main>
 
             <footer className="footer">
-                <p>Copyright © 1996-2024 Pearson Education Inc. or its affiliates. All rights reserved.</p>
-                <div className="footer-links">
-                    <a href="/terms">Terms</a>
-                    <a href="/privacy">Privacy</a>
-                    <a href="/contact">Contact</a>
-                </div>
+                <p>Copyright © 1996-2024 Pearson Education Inc. All rights reserved.</p>
             </footer>
         </div>
     );

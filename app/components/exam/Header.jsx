@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className="results-header">
       <div className="container">
         <Link href="/">
           <a className="logo">JavaScript Certification</a>
